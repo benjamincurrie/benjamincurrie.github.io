@@ -1,0 +1,13 @@
+@function makelongshadow($color) {
+  $val: darken($color, 5) 1px 1px 0px;
+  @for $i from 2 through 35 {
+    $val: #{$val}, #{$color} #{$i}px #{$i}px 0px;
+  }
+  @return $val;
+}
+
+@mixin long-text-shadow($color) {
+  @include text-shadow(makelongshadow($color));
+  // @include text-shadow(1px 1px 1px #000);
+  overflow:hidden;
+}

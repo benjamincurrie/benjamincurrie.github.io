@@ -1,0 +1,152 @@
+// Mobile first
+
+@media #{$small-up} {
+  #hero {
+    h1.title, .contact {
+      display:none;
+    }
+    hgroup {
+      font-size:0.5em;
+      margin-top:-50px;
+    }
+    #start a {
+      font-size:1em;
+      padding:10px 20px;
+    }
+  }
+  
+  #navigation {
+    table {
+      position:fixed;
+      top:0;
+      z-index: 99;
+      th {
+        text-align:left;
+      }
+      td {
+        text-align:center;
+      }
+      th, td {
+        display:block;
+        width:100%;
+        background:rgba(0,0,0,0.5);
+      }
+      a {
+        padding:5px;
+      }
+      .link {
+        display:none;
+      }
+      .handle {
+        display:block;
+        color:#fff;
+        float:right;
+        margin-top:5px;
+        font-size:22px;
+      }
+      .title, .contact {
+        position:relative;
+      }
+      .contact {
+        display:block!important;
+      }
+    }
+    &.expanded {
+      table .link {
+        display:block;
+      }
+    }
+  }
+
+  #about .selfie {
+    position:relative;
+  }
+  
+  
+}
+@media #{$small-only} {
+  .parallax {
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center!important;
+  }
+}
+
+@media #{$medium-up} {
+  #hero {
+    h1.title, .contact {
+      display:block;
+    }
+    hgroup {
+      font-size:0.8em;
+      margin-top:-80px;
+    }
+    #start a {
+      font-size:1.1em;
+      padding:15px 30px;
+    }
+  }
+  #navigation table {
+    position:absolute;
+    top:auto;
+    bottom:0;
+  }
+
+  #contact form label.r {
+    float:right;
+    margin-right:-30px;
+  }
+
+  .parallax {
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+  }
+}
+@media #{$medium-only} { }
+
+@media #{$large-up} {
+  #hero {
+    hgroup {
+      font-size:1em;
+      margin-top:-100px;
+    }
+  }
+  #navigation table {
+    th, td {
+      display:table-cell;
+      text-align:center;
+    }
+    th {
+      width:50%;
+      background: url(../images/nav.png) 0 0 repeat;
+    }
+    td {
+      width:1%;
+      background: url(../images/nav.png) 50% 0 repeat;
+    }
+    a {
+      padding:10px;
+    }
+    .link {
+      display:table-cell;
+    }
+    .handle {
+      display:none;
+    }
+    .title, .contact {
+      position:absolute;
+    }
+    .contact {
+      display:inline !important;
+    }
+  }
+}
+@media #{$large-only} { }
+
+@media #{$xlarge-up} { }
+@media #{$xlarge-only} { }
+
+@media #{$xxlarge-up} { }
+@media #{$xxlarge-only} { }
