@@ -1,0 +1,34 @@
+// Foundations
+@import "mixins";
+@import "normalize";
+@import "color";
+@import "spacing";
+@import "grid";
+@import "typography";
+
+// Compnents
+@import "components/_button";
+
+// Styles
+header {
+	position: relative;
+	background: $content;
+}
+
+header, section {
+	padding: $spacing-quadruple;
+}
+
+#portrait {
+	background-image: url(images/portrait.jpeg);
+	background-size: cover;
+	background-position: center;
+	width: 128px;
+	height: 128px;
+	@include border-radius(128px);
+	border:2px solid #fff;
+	margin-bottom: $spacing-base;
+}
+
+// Responsive
+@import "responsive";  // *requires components/grid

@@ -1,0 +1,50 @@
+$content: #1d1d1d;
+$content-alt: #555555;
+
+$light-content: #ffffff;
+$light-content-alt: #cccccc;
+
+$action: #0336B9;
+$action-hover: #021D64;
+
+body {
+    color: $content;
+    caption, .caption, .alt {
+        color: $content-alt;
+    }
+}
+
+a, a:visited {
+    color: $action;
+    svg path, svg path {
+        fill: $action;
+    }
+    &:hover {
+        color: $action-hover;
+        svg path, svg path {
+            fill: $action-hover;
+        }
+    }
+}
+
+.dark {
+    color: $light-content;
+    img path, img path {
+        fill: $action;
+    }
+    caption, .caption, .alt {
+        color: $light-content-alt;
+    }
+    a, a:visited {
+        color: $light-content;
+        svg path {
+            fill: $light-content;
+        }
+        &:hover {
+            color: $light-content-alt;
+            svg path {
+                fill: $light-content-alt;
+            }
+        }
+    }
+}

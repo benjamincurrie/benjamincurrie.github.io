@@ -1,0 +1,32 @@
+.button {
+    background: $action;
+    color: $light-content;
+    border: none;
+    padding: $spacing-base $spacing-double;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    @include border-radius(100px);
+    &:hover {
+        background: $action-hover;
+    }
+    &--secondary {
+        border: 1px solid $action;
+        color: $action;
+        background: none;
+        &:hover {
+            background: none;
+            border-color: $action-hover;
+            color: $action-hover;
+        }
+    }
+}
+
+.dark .button--secondary {
+    color: $light-content;
+    border-color: $light-content;
+    &:hover {
+        color: $light-content-alt;
+        border-color: $light-content-alt;
+    }
+}

@@ -1,19 +1,20 @@
 
 <!DOCTYPE html>
-<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!--[if IE 8]>
+	<html class="no-js lt-ie9" lang="en" >
+<![endif]-->
+<!--[if gt IE 8]><!-->
+	<html class="no-js" lang="en" >
+<!--<![endif]-->
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Benjamin Currie - Web Design and Development</title>
+	<title>Benjamin Currie - Design and Development</title>
 
-	<link rel="stylesheet" href="css/app.css">
-	<link href='https://fonts.googleapis.com/css?family=Rouge+Script|Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
 
-	<link rel="shortcut icon" href="/favicon.png" type="image/png" />
-
-	<script src="javascripts/vendor/custom.modernizr.js"></script>
+	<link rel="shortcut icon" href="favicon.png" type="image/png" />
 
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -27,174 +28,32 @@
 </head>
 <body>
 	<!-- Header -->
-	<header id="hero" class="parallax clearfix">
-		<div class="overlay">
-			<!-- Content -->
-			<h1 class="title left">Benjamin <strong>Currie</strong></h1>
-			<a href="mailto:web@benjamincurrie.com" class="contact right fancybox"><i class="fa fa-envelope">&nbsp;</i> Contact</a>
-			
-			<hgroup>
-				<h2>Hi, my name is <strong>Ben</strong> and I</h2>
-				<h1>Design <strong>&amp;</strong> Develop</h1>
-				<h2>websites and applications.</h2>
-			</hgroup>
-			
-			<!-- Move Along -->
-			<div id="start">
-				<a href="#about" class="button large scroll"><i class="fa fa-chevron-down"></i> Learn More</a>
-			</div>
-		</div>
-
-		<!-- Navigation -->
-		<nav id="navigation">
-			<!-- Yep, A table, How 1990 -->
-			<table class="sticky" role="navigation">
-				<tr>
-					<th>
-						<a href="#hero" class="fade"><h2 class="title">Benjamin <strong>Currie</strong></h2></a>
-						<a href="#navigation" class="handle"><i class="fa fa-bars">&nbsp;</i></a>
-					</th>
-					<td class="link"><a href="#about">About</a></td>
-					<td class="link"><a href="#services">Services</a></td>
-					<td class="link"><a href="#portfolio">Portfolio</a></td>
-					<td class="link"><a href="#connect">Connect</a></td>
-					<th class="link"><a href="mailto:web@benjamincurrie.com" class="fade button secondary contact fancybox"><i class="fa fa-envelope">&nbsp;</i> Contact</a></th>
-				</tr>
-			</table>
-		</nav>
-	</header>
-
-	<!-- About Section -->
-	
-	<section id="about" class="row">
-		<div class="medium-7 medium-push-5 columns">
-			<h3>I design, develop and create beautiful usable websites and applications for desktop and mobile.</h3>
-			<p>Currently based in Montreal, Canada, with a Bachelor in Computer Science from the University of Western Australia and over 7 years experience designing and developing websites and applications around the world.</p>
-
-			<p>For a long time I have struggled to define what it is I am; Designer, Web Developer, PHP Programmer, &lt;Coder&gt;. So I've come up with a new term, <a href="#designoper" data-dropdown="designoper" data-options="is_hover:true"><em>Designoper</em></a>.</p>
-
-			<div id="designoper" data-dropdown-content class="f-dropdown content medium"> 
-				<p><strong>De·sign·op·er /dəˈzīnəpər/ (Noun):</strong></p>
+	<header class="dark">
+		<div class="grid">
+			<div class="offset-mobile-6 col-mobile-6">
+				<!-- Content -->
+				<div id="portrait"></div>
+				<h5>Benjamin Currie</h5>
+				<a href="mailto:web@benjamincurrie.com" title="eMail">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" width="24px" height="24px"><title>eMail</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+				</a>
+				<a href="mailto:web@benjamincurrie.com" title="Github">
+					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" width="24px" height="24px"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+				</a>
 				
-				<ol>
-					<li>A hybrid of a designer and developer. Incorporating both into their trade they develop beautiful code and create structured designs.</li>
-					<li>An digital "jack of all trades".</li>
-					<li>An online creator who can handle any task despite the challenges.</li>
-				</ol>
+				<hgroup>
+					<h4>I design, develop and create beautiful usable websites and applications for desktop and mobile.</h4>
+					<p>Over 10 years of experience working in the web within both Design and Development roles.</p>
+					<p>Covering a wide range of roles and industries my experience gives me a solid understanding of object oriented programming, design principals, color theory, branding, user testing, A/B testing and data analysis.</p>
+					<a data-fancybox="" data-type="iframe" href="about.html" class="button button--secondary">Learn more</a>
+				</hgroup>
 			</div>
-			
-			<p>While not always easy to define, I love what I do because I am passionate about creating. And that’s what makes the difference as I believe when you are passionate about what you do, you produce higher quality work.</p>
-
-			<h4>Want to learn how I can help your business?</h4>
-			<a href="#services" class="button small scroll"><i class="fa fa-chevron-down">&nbsp;</i> View My Services</a>
 		</div>
-		  
-		<div class="medium-5 medium-pull-7 columns selfie">
-			<img src="images/selfie.jpg" />
-		</div>
-	</section>
-	
-	<!-- End About Section -->
-	
-	<!-- Services Section -->
-	
-	<section class="parallax" id="services">
-		<div class="row">
-		<div class="medium-6 columns">
-			<h2>Get the job done right.</h2>
-			<p>My services range through Branding, User Interface Design, Custom Wordpress Templates to Full Stack Applications.</p>
-			<h4>Need some proof?</h4>
-			<a href="#portfolio" class="button small scroll"><i class="fa fa-chevron-down">&nbsp;</i> Check Out My Portfolio</a>
-		</div>
-		<ul class="medium-6 columns services">
-			<li class="medium-4 small-6 columns">
-				<a href="#design" data-dropdown="design" data-options="is_hover:false"><i class="fa fa-picture-o"></i> Design</a>
-			</li>
-			
-			<li class="medium-4 small-6 columns">
-				<a href="#development" data-dropdown="development" data-options="is_hover:false"><i class="fa fa-code"></i> Dev</a>
-			</li>
-			
-			<li class="medium-4 small-6 columns">
-				<a href="#ux" data-dropdown="ux" data-options="is_hover:false"><i class="fa fa-columns"></i> UIX</a>
-			</li>
-			
-			<li class="medium-4 small-6 columns">
-				<a href="#seo" data-dropdown="seo" data-options="is_hover:false"><i class="fa fa-sort-alpha-asc"></i> SEO</a>
-			</li>
-			
-			<li class="medium-4 small-6 columns">
-				<a href="#social" data-dropdown="social" data-options="is_hover:false"><i class="fa fa-thumbs-o-up"></i> Social</a>
-			</li>
-			
-			<li class="medium-4 small-6 columns">
-				<a href="#commerce" data-dropdown="commerce" data-options="is_hover:false"><i class="fa fa-shopping-cart"></i> eCommerce</a>
-			</li>
-			<li class="medium-12 right"><i class="fa fa-info-circle">&nbsp;</i> Click the icons to find out more.</li>
-		</ul>
-		</div>
-	</section>
-	<div id="design" class="f-dropdown content medium" data-dropdown-content>
-		<h5>Corporate Identity</h5>
-			<h6>Logos/Branding</h6>
-			<h6>Letterheads</h6>
-			<h6>Business Cards</h6>
-		<h5>Brochures/Flyers</h5>
-		<h5>Illustration</h5>
-		<h5>Custom CMS Templates</h5>
-			<h6>Wordpress</h6>
-			<h6>Drupal</h6>
-			<h6>Joomla</h6>
-	</div>
-	<div id="development" class="f-dropdown content medium" data-dropdown-content>
-		<h5>PHP</h5>
-		<h5>Ruby on Rails</h5>
-		<h5>Custom CMS Plugins</h5>
-		<h5>RESTful Web Services</h5>
-		<h5>Mobile Apps</h5>
-	</div>
-	<div id="ux" class="f-dropdown content medium" data-dropdown-content>
-		<h5>Wireframes</h5>
-		<h5>Content Layout</h5>
-		<h5>Asset Design</h5>
-		<h5>Information Architecture</h5>
-	</div>
-	<div id="seo" class="f-dropdown content medium" data-dropdown-content>
-		<h5>Keyword Targeting</h5>
-		<h5>Adword Campaigns</h5>
-		<h5>Google Analytics</h5>
-	</div>
-	<div id="social" class="f-dropdown content medium" data-dropdown-content>
-		<h5>Social Strategy and Planning</h5>
-		<h5>Facebook Pages</h5>
-		<h5>Twitter Setup with API</h5>
-	</div>
-	<div id="commerce" class="f-dropdown content medium" data-dropdown-content>
-		<h5>WooCommerce</h5>
-		<h5>Magento</h5>
-		<h5>Opencart</h5>
-		<h5>Ubercart</h5>
-		<h5>Custom Solutions</h5>
-	</div>
-	
-	<!-- End Services Section -->
+	</header>
 	
 	<!-- Portfolio Section -->
 	
 	<section id="portfolio" class="clearfix">
-		<header>
-			<h2>Portfolio</h2>
-			<span class="seperator">&nbsp;</span>
-			<p>I've selected some of my favorite projects to show you below, <a href="mailto:web@benjamincurrie.com" class="fancybox">contact me</a> if you would like to see some more samples or to get a quote on your project.</p>
-			<nav id="folionav">
-				<a href="#fancybox" class="current">All</a>
-				<a href="#branding">Branding</a>
-				<a href="#web-design">Web Design</a>
-				<a href="#web-development">Web Development</a>
-				<a href="#app-development">App Development</a>
-				<a href="#ecommerce">eCommerce</a>
-			</nav>
-		</header>
 		<div id="foliogrid">
 			<div class="">
 				<!-- Cake Me Pretty -->
@@ -355,9 +214,9 @@
 
 	<!-- End Footer -->
 	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<!-- <script src="javascripts/vendor/jquery.js"></script> -->
-	<script src="javascripts/app.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 </body>
 </html>
