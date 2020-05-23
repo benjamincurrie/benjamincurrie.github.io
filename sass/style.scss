@@ -10,15 +10,18 @@
 @import "components/_button";
 
 // Styles
+body.internal {
+	padding: $spacing-double;
+	max-width:680px;
+}
 header {
 	position: relative;
 	background: $content;
+	min-height: 90%;
 }
-
 header, section {
 	padding: $spacing-quadruple;
 }
-
 #portrait {
 	background-image: url(images/portrait.jpeg);
 	background-size: cover;
@@ -28,6 +31,59 @@ header, section {
 	@include border-radius(128px);
 	border:2px solid #fff;
 	margin-bottom: $spacing-base;
+}
+
+.img-fluid {
+	max-width:100%;
+}
+
+.visuals {
+	max-width: $device-desktop * 1px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.visuals a {
+	text-decoration:none;
+	margin-right: $spacing-base;
+	margin-bottom: $spacing-base;
+	display: inline-block;
+	img {
+		max-width:120px;
+		max-height:240px;
+		display: block;
+	}
+}
+
+section {
+	background: #f5f5f5;
+	&.dark {
+		background: #333333;
+	}
+}
+#booking-messaging {
+	background-color: #EDF4FF;
+}
+
+#more-work {
+	a {
+		position: relative;
+		color: #fff;
+		display:block;
+		img {
+			display:block;
+		}
+		hgroup {
+			margin:0;
+			position: absolute;
+			text-align:center;
+			top:0;
+			right:0;
+			bottom:0;
+			left:0;
+			background: rgba(0,0,0,0.5);
+		}
+	}
 }
 
 // Responsive

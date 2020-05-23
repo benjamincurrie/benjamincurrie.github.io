@@ -18,7 +18,7 @@
   * @TODO: Use SASS Maps instead
   */
  $spacing-size-names: (double, triple, quadruple, half);
- $spacing-sizes: ($spacing-double, $spacing-triple, $spacing-quadruple $spacing-half);
+ $spacing-sizes: ($spacing-double, $spacing-triple, $spacing-quadruple, $spacing-half);
  
  /**
   * Spacing mixin loops through all of the sizes (set in the ui/variables file)
@@ -35,29 +35,29 @@
 	 @each $type in $types {
  
 		 /* e.g. %padding { padding: $spacing-base }  */
-		 %#{$type} { #{$type}: $spacing-base; }
+		 .#{$type} { #{$type}: $spacing-base; }
  
 		 /* e.g. %padding-none { padding: 0 }  */
-		 %#{$type}-none { #{$type}: 0; }
+		 .#{$type}-none { #{$type}: 0; }
  
 		 /* e.g. %padding--ends */
-		 %#{$type}--ends {
+		 .#{$type}--ends {
 			 #{$type}-top: $spacing-base;
 			 #{$type}-bottom: $spacing-base;
 		 }
  
-		 %#{$type}-none--ends {
+		 .#{$type}-none--ends {
 			 #{$type}-top: 0;
 			 #{$type}-bottom: 0;
 		 }
  
 		 /* e.g. %padding--sides */
-		 %#{$type}--sides {
+		 .#{$type}--sides {
 			 #{$type}-left: $spacing-base;
 			 #{$type}-right: $spacing-base;
 		 }
  
-		 %#{$type}-none--sides {
+		 .#{$type}-none--sides {
 			 #{$type}-left: 0;
 			 #{$type}-right: 0;
 		 }
@@ -69,11 +69,11 @@
 		  */
 		 @each $side in $sides {
 			 /* e.g. %padding--top */
-			 %#{$type}--#{$side} {
+			 .#{$type}--#{$side} {
 				 #{$type}-#{$side}: $spacing-base;
 			 }
  
-			 %#{$type}-none--#{$side} {
+			 .#{$type}-none--#{$side} {
 				 #{$type}-#{$side}: 0;
 			 }
 		 }
@@ -92,16 +92,16 @@
 			 $spacing-size: nth($spacing-sizes, $i);
  
 			 /* Base padding for each size */
-			 %#{$type}-#{$size} { #{$type}: $spacing-size; }
+			 .#{$type}-#{$size} { #{$type}: $spacing-size; }
  
 			 /* e.g. %padding-large--ends */
-			 %#{$type}-#{$size}--ends {
+			 .#{$type}-#{$size}--ends {
 				 #{$type}-top: $spacing-size;
 				 #{$type}-bottom: $spacing-size;
 			 }
  
 			 /* e.g. %padding-large--sides */
-			 %#{$type}-#{$size}--sides {
+			 .#{$type}-#{$size}--sides {
 				 #{$type}-left: $spacing-size;
 				 #{$type}-right: $spacing-size;
 			 }
@@ -114,7 +114,7 @@
 			 @each $side in $sides {
  
 				 /* e.g. %padding-large--top */
-				 %#{$type}-#{$size}--#{$side} {
+				 .#{$type}-#{$size}--#{$side} {
 					 #{$type}-#{$side}: $spacing-size;
 				 }
  
@@ -125,3 +125,5 @@
 	 } // types
  
  } // spacing
+
+ @include spacing;

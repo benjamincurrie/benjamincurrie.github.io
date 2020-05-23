@@ -1,3 +1,7 @@
+* {
+box-sizing: border-box;
+}
+
 $device-mobile: 768;
 $device-tablet: 992;
 $device-desktop: 1200;
@@ -27,6 +31,7 @@ $map-grid-props: (
 		}
 		@for $i from 1 through $grid-cols {
 			.col#{$modifier}-#{$i} {
+				padding: $spacing-base;
 				flex-basis: (100 / ($grid-cols / $i) ) * 1%;
 			}
 			.offset#{$modifier}-#{$i} {
@@ -57,11 +62,15 @@ $map-grid-props: (
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
+	padding: $spacing-base;
 	&--fluid {
 		margin: 0;
 		max-width: 100%;
 	}
 	@each $modifier , $breakpoint in $map-grid-props {
 		@include create-col-classes($modifier, $grid__cols, $breakpoint);
+	}
+	&.reversed {
+		flex-direction: row-reverse;
 	}
 }
