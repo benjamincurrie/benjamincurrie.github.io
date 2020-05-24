@@ -14,11 +14,11 @@ body, p, ol, ul, li {
     font-size: 16px;
     line-height: 24px;
 }
-p, .body, h5, h6, ul, ol {
-    margin: 0 0 $spacing-base;
+p, .body, h5, h6, ul, ol, hgroup {
+    margin: 0 0 $spacing-md;
 }
-h1, h2, h3, h4, hgroup {
-    margin: $spacing-double 0 $spacing-base;
+h1, h2, h3, h4 {
+    margin: $spacing-lg 0 $spacing-md;
 }
 hgroup {
     h1, h2, h3, h4, h5, h6, p {

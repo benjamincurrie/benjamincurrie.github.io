@@ -418,27 +418,6 @@ a:hover svg path, a:hover svg path, a:visited:hover svg path, a:visited:hover sv
   fill: #dddddd;
 }
 
-/* ==========================================================================
-   Spacing Mixins
-   ========================================================================== */
-/**
- * Define these spacing variables
- */
-/* 
- * Make sure you keep the names & sizes consistent. You can add as many spacing 
- * sizes as you feel necessary
- *
- * @TODO: Use SASS Maps instead
- */
-/**
- * Spacing mixin loops through all of the sizes (set in the ui/variables file)
- * and generates all the inivisble classes for margins and paddings.
- */
-/* 
- * Loop through each type
- *
- * e.g. margin, padding
- */
 /* e.g. %padding { padding: $spacing-base }  */
 .margin {
   margin: 8px;
@@ -472,10 +451,10 @@ a:hover svg path, a:hover svg path, a:visited:hover svg path, a:visited:hover sv
 }
 
 /* 
- * Loop through each side and create the class for it
- *
- * e.g. padding--left: $amount
- */
+* Loop through each side and create the class for it
+*
+* e.g. padding--left: $amount
+*/
 /* e.g. %padding--top */
 .margin--top {
   margin-top: 8px;
@@ -485,212 +464,154 @@ a:hover svg path, a:hover svg path, a:visited:hover svg path, a:visited:hover sv
   margin-top: 0;
 }
 
-/* e.g. %padding--top */
-.margin--left {
-  margin-left: 8px;
-}
-
-.margin-none--left {
-  margin-left: 0;
-}
-
-/* e.g. %padding--top */
-.margin--bottom {
-  margin-bottom: 8px;
-}
-
-.margin-none--bottom {
-  margin-bottom: 0;
-}
-
-/* e.g. %padding--top */
-.margin--right {
-  margin-right: 8px;
-}
-
-.margin-none--right {
-  margin-right: 0;
-}
-
 /* 
- * Loop through each size
- *
- * e.g. double, triple, half, quarter
- */
+* Loop through each size
+*
+* e.g. double, triple, half, quarter
+*/
 /* get the index of the current item in the loop */
 /* get the spacing size for whichever size name we are on */
 /* Base padding for each size */
-.margin-double {
-  margin: 16px;
+.margin-xs {
+  margin: 2px;
 }
 
 /* e.g. %padding-large--ends */
-.margin-double--ends {
-  margin-top: 16px;
-  margin-bottom: 16px;
+.margin-xs--ends {
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 /* e.g. %padding-large--sides */
-.margin-double--sides {
-  margin-left: 16px;
-  margin-right: 16px;
+.margin-xs--sides {
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 /* 
- * Loop through each side and create the class for it
- *
- * e.g. padding-left: $amount, padding-right: $amount
- */
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
 /* e.g. %padding-large--top */
-.margin-double--top {
-  margin-top: 16px;
-}
-
-/* e.g. %padding-large--top */
-.margin-double--left {
-  margin-left: 16px;
-}
-
-/* e.g. %padding-large--top */
-.margin-double--bottom {
-  margin-bottom: 16px;
-}
-
-/* e.g. %padding-large--top */
-.margin-double--right {
-  margin-right: 16px;
+.margin-xs--top {
+  margin-top: 2px;
 }
 
 /* get the index of the current item in the loop */
 /* get the spacing size for whichever size name we are on */
 /* Base padding for each size */
-.margin-triple {
-  margin: 24px;
-}
-
-/* e.g. %padding-large--ends */
-.margin-triple--ends {
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-/* e.g. %padding-large--sides */
-.margin-triple--sides {
-  margin-left: 24px;
-  margin-right: 24px;
-}
-
-/* 
- * Loop through each side and create the class for it
- *
- * e.g. padding-left: $amount, padding-right: $amount
- */
-/* e.g. %padding-large--top */
-.margin-triple--top {
-  margin-top: 24px;
-}
-
-/* e.g. %padding-large--top */
-.margin-triple--left {
-  margin-left: 24px;
-}
-
-/* e.g. %padding-large--top */
-.margin-triple--bottom {
-  margin-bottom: 24px;
-}
-
-/* e.g. %padding-large--top */
-.margin-triple--right {
-  margin-right: 24px;
-}
-
-/* get the index of the current item in the loop */
-/* get the spacing size for whichever size name we are on */
-/* Base padding for each size */
-.margin-quadruple {
-  margin: 32px;
-}
-
-/* e.g. %padding-large--ends */
-.margin-quadruple--ends {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-/* e.g. %padding-large--sides */
-.margin-quadruple--sides {
-  margin-left: 32px;
-  margin-right: 32px;
-}
-
-/* 
- * Loop through each side and create the class for it
- *
- * e.g. padding-left: $amount, padding-right: $amount
- */
-/* e.g. %padding-large--top */
-.margin-quadruple--top {
-  margin-top: 32px;
-}
-
-/* e.g. %padding-large--top */
-.margin-quadruple--left {
-  margin-left: 32px;
-}
-
-/* e.g. %padding-large--top */
-.margin-quadruple--bottom {
-  margin-bottom: 32px;
-}
-
-/* e.g. %padding-large--top */
-.margin-quadruple--right {
-  margin-right: 32px;
-}
-
-/* get the index of the current item in the loop */
-/* get the spacing size for whichever size name we are on */
-/* Base padding for each size */
-.margin-half {
+.margin-sm {
   margin: 4px;
 }
 
 /* e.g. %padding-large--ends */
-.margin-half--ends {
+.margin-sm--ends {
   margin-top: 4px;
   margin-bottom: 4px;
 }
 
 /* e.g. %padding-large--sides */
-.margin-half--sides {
+.margin-sm--sides {
   margin-left: 4px;
   margin-right: 4px;
 }
 
 /* 
- * Loop through each side and create the class for it
- *
- * e.g. padding-left: $amount, padding-right: $amount
- */
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
 /* e.g. %padding-large--top */
-.margin-half--top {
+.margin-sm--top {
   margin-top: 4px;
 }
 
-/* e.g. %padding-large--top */
-.margin-half--left {
-  margin-left: 4px;
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-md {
+  margin: 8px;
 }
 
-/* e.g. %padding-large--top */
-.margin-half--bottom {
-  margin-bottom: 4px;
+/* e.g. %padding-large--ends */
+.margin-md--ends {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
+/* e.g. %padding-large--sides */
+.margin-md--sides {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
 /* e.g. %padding-large--top */
-.margin-half--right {
-  margin-right: 4px;
+.margin-md--top {
+  margin-top: 8px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-lg {
+  margin: 16px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-lg--ends {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-lg--sides {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-lg--top {
+  margin-top: 16px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-xl {
+  margin: 32px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-xl--ends {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-xl--sides {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-xl--top {
+  margin-top: 32px;
 }
 
 /* e.g. %padding { padding: $spacing-base }  */
@@ -726,10 +647,10 @@ a:hover svg path, a:hover svg path, a:visited:hover svg path, a:visited:hover sv
 }
 
 /* 
- * Loop through each side and create the class for it
- *
- * e.g. padding--left: $amount
- */
+* Loop through each side and create the class for it
+*
+* e.g. padding--left: $amount
+*/
 /* e.g. %padding--top */
 .padding--top {
   padding-top: 8px;
@@ -739,6 +660,389 @@ a:hover svg path, a:hover svg path, a:visited:hover svg path, a:visited:hover sv
   padding-top: 0;
 }
 
+/* 
+* Loop through each size
+*
+* e.g. double, triple, half, quarter
+*/
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-xs {
+  padding: 2px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-xs--ends {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-xs--sides {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-xs--top {
+  padding-top: 2px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-sm {
+  padding: 4px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-sm--ends {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-sm--sides {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-sm--top {
+  padding-top: 4px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-md {
+  padding: 8px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-md--ends {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-md--sides {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-md--top {
+  padding-top: 8px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-lg {
+  padding: 16px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-lg--ends {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-lg--sides {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-lg--top {
+  padding-top: 16px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-xl {
+  padding: 32px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-xl--ends {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-xl--sides {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-xl--top {
+  padding-top: 32px;
+}
+
+/* e.g. %padding { padding: $spacing-base }  */
+.margin {
+  margin: 8px;
+}
+
+/* e.g. %padding-none { padding: 0 }  */
+.margin-none {
+  margin: 0;
+}
+
+/* e.g. %padding--ends */
+.margin--ends {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.margin-none--ends {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* e.g. %padding--sides */
+.margin--sides {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.margin-none--sides {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding--left: $amount
+*/
+/* e.g. %padding--top */
+.margin--left {
+  margin-left: 8px;
+}
+
+.margin-none--left {
+  margin-left: 0;
+}
+
+/* 
+* Loop through each size
+*
+* e.g. double, triple, half, quarter
+*/
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-xs {
+  margin: 2px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-xs--ends {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-xs--sides {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-xs--left {
+  margin-left: 2px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-sm {
+  margin: 4px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-sm--ends {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-sm--sides {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-sm--left {
+  margin-left: 4px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-md {
+  margin: 8px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-md--ends {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-md--sides {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-md--left {
+  margin-left: 8px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-lg {
+  margin: 16px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-lg--ends {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-lg--sides {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-lg--left {
+  margin-left: 16px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-xl {
+  margin: 32px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-xl--ends {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-xl--sides {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-xl--left {
+  margin-left: 32px;
+}
+
+/* e.g. %padding { padding: $spacing-base }  */
+.padding {
+  padding: 8px;
+}
+
+/* e.g. %padding-none { padding: 0 }  */
+.padding-none {
+  padding: 0;
+}
+
+/* e.g. %padding--ends */
+.padding--ends {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.padding-none--ends {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* e.g. %padding--sides */
+.padding--sides {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.padding-none--sides {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding--left: $amount
+*/
 /* e.g. %padding--top */
 .padding--left {
   padding-left: 8px;
@@ -748,6 +1052,389 @@ a:hover svg path, a:hover svg path, a:visited:hover svg path, a:visited:hover sv
   padding-left: 0;
 }
 
+/* 
+* Loop through each size
+*
+* e.g. double, triple, half, quarter
+*/
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-xs {
+  padding: 2px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-xs--ends {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-xs--sides {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-xs--left {
+  padding-left: 2px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-sm {
+  padding: 4px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-sm--ends {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-sm--sides {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-sm--left {
+  padding-left: 4px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-md {
+  padding: 8px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-md--ends {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-md--sides {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-md--left {
+  padding-left: 8px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-lg {
+  padding: 16px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-lg--ends {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-lg--sides {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-lg--left {
+  padding-left: 16px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-xl {
+  padding: 32px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-xl--ends {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-xl--sides {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-xl--left {
+  padding-left: 32px;
+}
+
+/* e.g. %padding { padding: $spacing-base }  */
+.margin {
+  margin: 8px;
+}
+
+/* e.g. %padding-none { padding: 0 }  */
+.margin-none {
+  margin: 0;
+}
+
+/* e.g. %padding--ends */
+.margin--ends {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.margin-none--ends {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* e.g. %padding--sides */
+.margin--sides {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.margin-none--sides {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding--left: $amount
+*/
+/* e.g. %padding--top */
+.margin--bottom {
+  margin-bottom: 8px;
+}
+
+.margin-none--bottom {
+  margin-bottom: 0;
+}
+
+/* 
+* Loop through each size
+*
+* e.g. double, triple, half, quarter
+*/
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-xs {
+  margin: 2px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-xs--ends {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-xs--sides {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-xs--bottom {
+  margin-bottom: 2px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-sm {
+  margin: 4px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-sm--ends {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-sm--sides {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-sm--bottom {
+  margin-bottom: 4px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-md {
+  margin: 8px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-md--ends {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-md--sides {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-md--bottom {
+  margin-bottom: 8px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-lg {
+  margin: 16px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-lg--ends {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-lg--sides {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-lg--bottom {
+  margin-bottom: 16px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-xl {
+  margin: 32px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-xl--ends {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-xl--sides {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-xl--bottom {
+  margin-bottom: 32px;
+}
+
+/* e.g. %padding { padding: $spacing-base }  */
+.padding {
+  padding: 8px;
+}
+
+/* e.g. %padding-none { padding: 0 }  */
+.padding-none {
+  padding: 0;
+}
+
+/* e.g. %padding--ends */
+.padding--ends {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.padding-none--ends {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* e.g. %padding--sides */
+.padding--sides {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.padding-none--sides {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding--left: $amount
+*/
 /* e.g. %padding--top */
 .padding--bottom {
   padding-bottom: 8px;
@@ -757,6 +1444,389 @@ a:hover svg path, a:hover svg path, a:visited:hover svg path, a:visited:hover sv
   padding-bottom: 0;
 }
 
+/* 
+* Loop through each size
+*
+* e.g. double, triple, half, quarter
+*/
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-xs {
+  padding: 2px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-xs--ends {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-xs--sides {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-xs--bottom {
+  padding-bottom: 2px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-sm {
+  padding: 4px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-sm--ends {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-sm--sides {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-sm--bottom {
+  padding-bottom: 4px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-md {
+  padding: 8px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-md--ends {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-md--sides {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-md--bottom {
+  padding-bottom: 8px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-lg {
+  padding: 16px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-lg--ends {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-lg--sides {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-lg--bottom {
+  padding-bottom: 16px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-xl {
+  padding: 32px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-xl--ends {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-xl--sides {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-xl--bottom {
+  padding-bottom: 32px;
+}
+
+/* e.g. %padding { padding: $spacing-base }  */
+.margin {
+  margin: 8px;
+}
+
+/* e.g. %padding-none { padding: 0 }  */
+.margin-none {
+  margin: 0;
+}
+
+/* e.g. %padding--ends */
+.margin--ends {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.margin-none--ends {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* e.g. %padding--sides */
+.margin--sides {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.margin-none--sides {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding--left: $amount
+*/
+/* e.g. %padding--top */
+.margin--right {
+  margin-right: 8px;
+}
+
+.margin-none--right {
+  margin-right: 0;
+}
+
+/* 
+* Loop through each size
+*
+* e.g. double, triple, half, quarter
+*/
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-xs {
+  margin: 2px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-xs--ends {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-xs--sides {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-xs--right {
+  margin-right: 2px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-sm {
+  margin: 4px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-sm--ends {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-sm--sides {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-sm--right {
+  margin-right: 4px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-md {
+  margin: 8px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-md--ends {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-md--sides {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-md--right {
+  margin-right: 8px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-lg {
+  margin: 16px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-lg--ends {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-lg--sides {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-lg--right {
+  margin-right: 16px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-xl {
+  margin: 32px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-xl--ends {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-xl--sides {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.margin-xl--right {
+  margin-right: 32px;
+}
+
+/* e.g. %padding { padding: $spacing-base }  */
+.padding {
+  padding: 8px;
+}
+
+/* e.g. %padding-none { padding: 0 }  */
+.padding-none {
+  padding: 0;
+}
+
+/* e.g. %padding--ends */
+.padding--ends {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.padding-none--ends {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* e.g. %padding--sides */
+.padding--sides {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.padding-none--sides {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding--left: $amount
+*/
 /* e.g. %padding--top */
 .padding--right {
   padding-right: 8px;
@@ -767,596 +1837,1129 @@ a:hover svg path, a:hover svg path, a:visited:hover svg path, a:visited:hover sv
 }
 
 /* 
- * Loop through each size
- *
- * e.g. double, triple, half, quarter
- */
+* Loop through each size
+*
+* e.g. double, triple, half, quarter
+*/
 /* get the index of the current item in the loop */
 /* get the spacing size for whichever size name we are on */
 /* Base padding for each size */
-.padding-double {
-  padding: 16px;
+.padding-xs {
+  padding: 2px;
 }
 
 /* e.g. %padding-large--ends */
-.padding-double--ends {
-  padding-top: 16px;
-  padding-bottom: 16px;
+.padding-xs--ends {
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 /* e.g. %padding-large--sides */
-.padding-double--sides {
-  padding-left: 16px;
-  padding-right: 16px;
+.padding-xs--sides {
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 /* 
- * Loop through each side and create the class for it
- *
- * e.g. padding-left: $amount, padding-right: $amount
- */
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
 /* e.g. %padding-large--top */
-.padding-double--top {
-  padding-top: 16px;
-}
-
-/* e.g. %padding-large--top */
-.padding-double--left {
-  padding-left: 16px;
-}
-
-/* e.g. %padding-large--top */
-.padding-double--bottom {
-  padding-bottom: 16px;
-}
-
-/* e.g. %padding-large--top */
-.padding-double--right {
-  padding-right: 16px;
+.padding-xs--right {
+  padding-right: 2px;
 }
 
 /* get the index of the current item in the loop */
 /* get the spacing size for whichever size name we are on */
 /* Base padding for each size */
-.padding-triple {
-  padding: 24px;
-}
-
-/* e.g. %padding-large--ends */
-.padding-triple--ends {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-/* e.g. %padding-large--sides */
-.padding-triple--sides {
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-/* 
- * Loop through each side and create the class for it
- *
- * e.g. padding-left: $amount, padding-right: $amount
- */
-/* e.g. %padding-large--top */
-.padding-triple--top {
-  padding-top: 24px;
-}
-
-/* e.g. %padding-large--top */
-.padding-triple--left {
-  padding-left: 24px;
-}
-
-/* e.g. %padding-large--top */
-.padding-triple--bottom {
-  padding-bottom: 24px;
-}
-
-/* e.g. %padding-large--top */
-.padding-triple--right {
-  padding-right: 24px;
-}
-
-/* get the index of the current item in the loop */
-/* get the spacing size for whichever size name we are on */
-/* Base padding for each size */
-.padding-quadruple {
-  padding: 32px;
-}
-
-/* e.g. %padding-large--ends */
-.padding-quadruple--ends {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-/* e.g. %padding-large--sides */
-.padding-quadruple--sides {
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
-/* 
- * Loop through each side and create the class for it
- *
- * e.g. padding-left: $amount, padding-right: $amount
- */
-/* e.g. %padding-large--top */
-.padding-quadruple--top {
-  padding-top: 32px;
-}
-
-/* e.g. %padding-large--top */
-.padding-quadruple--left {
-  padding-left: 32px;
-}
-
-/* e.g. %padding-large--top */
-.padding-quadruple--bottom {
-  padding-bottom: 32px;
-}
-
-/* e.g. %padding-large--top */
-.padding-quadruple--right {
-  padding-right: 32px;
-}
-
-/* get the index of the current item in the loop */
-/* get the spacing size for whichever size name we are on */
-/* Base padding for each size */
-.padding-half {
+.padding-sm {
   padding: 4px;
 }
 
 /* e.g. %padding-large--ends */
-.padding-half--ends {
+.padding-sm--ends {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
 /* e.g. %padding-large--sides */
-.padding-half--sides {
+.padding-sm--sides {
   padding-left: 4px;
   padding-right: 4px;
 }
 
 /* 
- * Loop through each side and create the class for it
- *
- * e.g. padding-left: $amount, padding-right: $amount
- */
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
 /* e.g. %padding-large--top */
-.padding-half--top {
-  padding-top: 4px;
-}
-
-/* e.g. %padding-large--top */
-.padding-half--left {
-  padding-left: 4px;
-}
-
-/* e.g. %padding-large--top */
-.padding-half--bottom {
-  padding-bottom: 4px;
-}
-
-/* e.g. %padding-large--top */
-.padding-half--right {
+.padding-sm--right {
   padding-right: 4px;
 }
 
-* {
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-md {
+  padding: 8px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-md--ends {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-md--sides {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-md--right {
+  padding-right: 8px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-lg {
+  padding: 16px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-lg--ends {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-lg--sides {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-lg--right {
+  padding-right: 16px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-xl {
+  padding: 32px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-xl--ends {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-xl--sides {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* 
+* Loop through each side and create the class for it
+*
+* e.g. padding-left: $amount, padding-right: $amount
+*/
+/* e.g. %padding-large--top */
+.padding-xl--right {
+  padding-right: 32px;
+}
+
+.row {
   box-sizing: border-box;
-}
-
-@media screen and (max-width: -1px) {
-  .hidden-xs-down {
-    display: none !important;
-  }
-}
-.hidden-xs-up {
-  display: none !important;
-}
-
-@media screen and (max-width: 767px) {
-  .hidden-mobile-down {
-    display: none !important;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hidden-mobile-up {
-    display: none !important;
-  }
-}
-@media screen and (max-width: 991px) {
-  .hidden-tablet-down {
-    display: none !important;
-  }
-}
-@media screen and (min-width: 992px) {
-  .hidden-tablet-up {
-    display: none !important;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .hidden-desktop-down {
-    display: none !important;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hidden-desktop-up {
-    display: none !important;
-  }
-}
-.grid {
-  max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
   flex-wrap: wrap;
-  padding: 8px;
 }
-.grid--fluid {
-  margin: 0;
+
+.row.reverse {
+  flex-direction: row-reverse;
+}
+
+.row.natural-height {
+  align-items: flex-start;
+}
+
+.row.flex-column {
+  flex-direction: column;
+}
+
+.col {
+  box-sizing: border-box;
+  flex-grow: 1;
+  flex-basis: 0;
   max-width: 100%;
+  padding: 1rem;
 }
-.grid .offset-0 {
-  margin-left: 0;
+
+.col.reverse {
+  flex-direction: column-reverse;
 }
-.grid .col-1 {
-  padding: 8px;
+
+.first {
+  order: -1;
+}
+
+.last {
+  order: 1;
+}
+
+.align-start {
+  align-self: flex-start;
+}
+
+.align-end {
+  align-self: flex-end;
+}
+
+.align-center {
+  align-self: center;
+}
+
+.align-baseline {
+  align-self: baseline;
+}
+
+.align-stretch {
+  align-self: stretch;
+}
+
+.col-xs {
+  box-sizing: border-box;
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.col-xs-1 {
+  box-sizing: border-box;
   flex-basis: 8.3333333333%;
+  max-width: 8.3333333333%;
+  padding: 1rem;
 }
-.grid .offset-1 {
+
+.col-xs-offset-1 {
   margin-left: 8.3333333333%;
 }
-.grid .col-2 {
-  padding: 8px;
+
+.col-xs-2 {
+  box-sizing: border-box;
   flex-basis: 16.6666666667%;
+  max-width: 16.6666666667%;
+  padding: 1rem;
 }
-.grid .offset-2 {
+
+.col-xs-offset-2 {
   margin-left: 16.6666666667%;
 }
-.grid .col-3 {
-  padding: 8px;
+
+.col-xs-3 {
+  box-sizing: border-box;
   flex-basis: 25%;
+  max-width: 25%;
+  padding: 1rem;
 }
-.grid .offset-3 {
+
+.col-xs-offset-3 {
   margin-left: 25%;
 }
-.grid .col-4 {
-  padding: 8px;
+
+.col-xs-4 {
+  box-sizing: border-box;
   flex-basis: 33.3333333333%;
+  max-width: 33.3333333333%;
+  padding: 1rem;
 }
-.grid .offset-4 {
+
+.col-xs-offset-4 {
   margin-left: 33.3333333333%;
 }
-.grid .col-5 {
-  padding: 8px;
+
+.col-xs-5 {
+  box-sizing: border-box;
   flex-basis: 41.6666666667%;
+  max-width: 41.6666666667%;
+  padding: 1rem;
 }
-.grid .offset-5 {
+
+.col-xs-offset-5 {
   margin-left: 41.6666666667%;
 }
-.grid .col-6 {
-  padding: 8px;
+
+.col-xs-6 {
+  box-sizing: border-box;
   flex-basis: 50%;
+  max-width: 50%;
+  padding: 1rem;
 }
-.grid .offset-6 {
+
+.col-xs-offset-6 {
   margin-left: 50%;
 }
-.grid .col-7 {
-  padding: 8px;
+
+.col-xs-7 {
+  box-sizing: border-box;
   flex-basis: 58.3333333333%;
+  max-width: 58.3333333333%;
+  padding: 1rem;
 }
-.grid .offset-7 {
+
+.col-xs-offset-7 {
   margin-left: 58.3333333333%;
 }
-.grid .col-8 {
-  padding: 8px;
+
+.col-xs-8 {
+  box-sizing: border-box;
   flex-basis: 66.6666666667%;
+  max-width: 66.6666666667%;
+  padding: 1rem;
 }
-.grid .offset-8 {
+
+.col-xs-offset-8 {
   margin-left: 66.6666666667%;
 }
-.grid .col-9 {
-  padding: 8px;
+
+.col-xs-9 {
+  box-sizing: border-box;
   flex-basis: 75%;
+  max-width: 75%;
+  padding: 1rem;
 }
-.grid .offset-9 {
+
+.col-xs-offset-9 {
   margin-left: 75%;
 }
-.grid .col-10 {
-  padding: 8px;
+
+.col-xs-10 {
+  box-sizing: border-box;
   flex-basis: 83.3333333333%;
+  max-width: 83.3333333333%;
+  padding: 1rem;
 }
-.grid .offset-10 {
+
+.col-xs-offset-10 {
   margin-left: 83.3333333333%;
 }
-.grid .col-11 {
-  padding: 8px;
+
+.col-xs-11 {
+  box-sizing: border-box;
   flex-basis: 91.6666666667%;
+  max-width: 91.6666666667%;
+  padding: 1rem;
 }
-.grid .offset-11 {
+
+.col-xs-offset-11 {
   margin-left: 91.6666666667%;
 }
-.grid .col-12 {
-  padding: 8px;
+
+.col-xs-12 {
+  box-sizing: border-box;
   flex-basis: 100%;
+  max-width: 100%;
+  padding: 1rem;
 }
-.grid .offset-12 {
+
+.col-xs-offset-12 {
   margin-left: 100%;
 }
-@media screen and (min-width: 768px) {
-  .grid .offset-mobile-0 {
-    margin-left: 0;
+
+.row.start-xs {
+  justify-content: flex-start;
+}
+
+.row.center-xs {
+  justify-content: center;
+}
+
+.row.end-xs {
+  justify-content: flex-end;
+}
+
+.row.top-xs {
+  align-items: flex-start;
+}
+
+.row.middle-xs {
+  align-items: center;
+}
+
+.row.bottom-xs {
+  align-items: flex-end;
+}
+
+.row.around-xs {
+  justify-content: space-around;
+}
+
+.row.between-xs {
+  justify-content: space-between;
+}
+
+.first-xs {
+  order: -1;
+}
+
+.last-xs {
+  order: 1;
+}
+
+@media only screen and (min-width: 41rem) {
+  .col-sm {
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    padding: 1rem;
   }
-  .grid .col-mobile-1 {
-    padding: 8px;
+
+  .col-sm-1 {
+    box-sizing: border-box;
     flex-basis: 8.3333333333%;
+    max-width: 8.3333333333%;
+    padding: 1rem;
   }
-  .grid .offset-mobile-1 {
+
+  .col-sm-offset-1 {
     margin-left: 8.3333333333%;
   }
-  .grid .col-mobile-2 {
-    padding: 8px;
+
+  .col-sm-2 {
+    box-sizing: border-box;
     flex-basis: 16.6666666667%;
+    max-width: 16.6666666667%;
+    padding: 1rem;
   }
-  .grid .offset-mobile-2 {
+
+  .col-sm-offset-2 {
     margin-left: 16.6666666667%;
   }
-  .grid .col-mobile-3 {
-    padding: 8px;
+
+  .col-sm-3 {
+    box-sizing: border-box;
     flex-basis: 25%;
+    max-width: 25%;
+    padding: 1rem;
   }
-  .grid .offset-mobile-3 {
+
+  .col-sm-offset-3 {
     margin-left: 25%;
   }
-  .grid .col-mobile-4 {
-    padding: 8px;
+
+  .col-sm-4 {
+    box-sizing: border-box;
     flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+    padding: 1rem;
   }
-  .grid .offset-mobile-4 {
+
+  .col-sm-offset-4 {
     margin-left: 33.3333333333%;
   }
-  .grid .col-mobile-5 {
-    padding: 8px;
+
+  .col-sm-5 {
+    box-sizing: border-box;
     flex-basis: 41.6666666667%;
+    max-width: 41.6666666667%;
+    padding: 1rem;
   }
-  .grid .offset-mobile-5 {
+
+  .col-sm-offset-5 {
     margin-left: 41.6666666667%;
   }
-  .grid .col-mobile-6 {
-    padding: 8px;
+
+  .col-sm-6 {
+    box-sizing: border-box;
     flex-basis: 50%;
+    max-width: 50%;
+    padding: 1rem;
   }
-  .grid .offset-mobile-6 {
+
+  .col-sm-offset-6 {
     margin-left: 50%;
   }
-  .grid .col-mobile-7 {
-    padding: 8px;
+
+  .col-sm-7 {
+    box-sizing: border-box;
     flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%;
+    padding: 1rem;
   }
-  .grid .offset-mobile-7 {
+
+  .col-sm-offset-7 {
     margin-left: 58.3333333333%;
   }
-  .grid .col-mobile-8 {
-    padding: 8px;
+
+  .col-sm-8 {
+    box-sizing: border-box;
     flex-basis: 66.6666666667%;
+    max-width: 66.6666666667%;
+    padding: 1rem;
   }
-  .grid .offset-mobile-8 {
+
+  .col-sm-offset-8 {
     margin-left: 66.6666666667%;
   }
-  .grid .col-mobile-9 {
-    padding: 8px;
+
+  .col-sm-9 {
+    box-sizing: border-box;
     flex-basis: 75%;
+    max-width: 75%;
+    padding: 1rem;
   }
-  .grid .offset-mobile-9 {
+
+  .col-sm-offset-9 {
     margin-left: 75%;
   }
-  .grid .col-mobile-10 {
-    padding: 8px;
+
+  .col-sm-10 {
+    box-sizing: border-box;
     flex-basis: 83.3333333333%;
+    max-width: 83.3333333333%;
+    padding: 1rem;
   }
-  .grid .offset-mobile-10 {
+
+  .col-sm-offset-10 {
     margin-left: 83.3333333333%;
   }
-  .grid .col-mobile-11 {
-    padding: 8px;
+
+  .col-sm-11 {
+    box-sizing: border-box;
     flex-basis: 91.6666666667%;
+    max-width: 91.6666666667%;
+    padding: 1rem;
   }
-  .grid .offset-mobile-11 {
+
+  .col-sm-offset-11 {
     margin-left: 91.6666666667%;
   }
-  .grid .col-mobile-12 {
-    padding: 8px;
+
+  .col-sm-12 {
+    box-sizing: border-box;
     flex-basis: 100%;
+    max-width: 100%;
+    padding: 1rem;
   }
-  .grid .offset-mobile-12 {
+
+  .col-sm-offset-12 {
     margin-left: 100%;
   }
+
+  .row.start-sm {
+    justify-content: flex-start;
+  }
+
+  .row.center-sm {
+    justify-content: center;
+  }
+
+  .row.end-sm {
+    justify-content: flex-end;
+  }
+
+  .row.top-sm {
+    align-items: flex-start;
+  }
+
+  .row.middle-sm {
+    align-items: center;
+  }
+
+  .row.bottom-sm {
+    align-items: flex-end;
+  }
+
+  .row.around-sm {
+    justify-content: space-around;
+  }
+
+  .row.between-sm {
+    justify-content: space-between;
+  }
+
+  .first-sm {
+    order: -1;
+  }
+
+  .last-sm {
+    order: 1;
+  }
 }
-@media screen and (min-width: 992px) {
-  .grid .offset-tablet-0 {
-    margin-left: 0;
+@media only screen and (min-width: 65rem) {
+  .col-md {
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    padding: 1rem;
   }
-  .grid .col-tablet-1 {
-    padding: 8px;
+
+  .col-md-1 {
+    box-sizing: border-box;
     flex-basis: 8.3333333333%;
+    max-width: 8.3333333333%;
+    padding: 1rem;
   }
-  .grid .offset-tablet-1 {
+
+  .col-md-offset-1 {
     margin-left: 8.3333333333%;
   }
-  .grid .col-tablet-2 {
-    padding: 8px;
+
+  .col-md-2 {
+    box-sizing: border-box;
     flex-basis: 16.6666666667%;
+    max-width: 16.6666666667%;
+    padding: 1rem;
   }
-  .grid .offset-tablet-2 {
+
+  .col-md-offset-2 {
     margin-left: 16.6666666667%;
   }
-  .grid .col-tablet-3 {
-    padding: 8px;
+
+  .col-md-3 {
+    box-sizing: border-box;
     flex-basis: 25%;
+    max-width: 25%;
+    padding: 1rem;
   }
-  .grid .offset-tablet-3 {
+
+  .col-md-offset-3 {
     margin-left: 25%;
   }
-  .grid .col-tablet-4 {
-    padding: 8px;
+
+  .col-md-4 {
+    box-sizing: border-box;
     flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+    padding: 1rem;
   }
-  .grid .offset-tablet-4 {
+
+  .col-md-offset-4 {
     margin-left: 33.3333333333%;
   }
-  .grid .col-tablet-5 {
-    padding: 8px;
+
+  .col-md-5 {
+    box-sizing: border-box;
     flex-basis: 41.6666666667%;
+    max-width: 41.6666666667%;
+    padding: 1rem;
   }
-  .grid .offset-tablet-5 {
+
+  .col-md-offset-5 {
     margin-left: 41.6666666667%;
   }
-  .grid .col-tablet-6 {
-    padding: 8px;
+
+  .col-md-6 {
+    box-sizing: border-box;
     flex-basis: 50%;
+    max-width: 50%;
+    padding: 1rem;
   }
-  .grid .offset-tablet-6 {
+
+  .col-md-offset-6 {
     margin-left: 50%;
   }
-  .grid .col-tablet-7 {
-    padding: 8px;
+
+  .col-md-7 {
+    box-sizing: border-box;
     flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%;
+    padding: 1rem;
   }
-  .grid .offset-tablet-7 {
+
+  .col-md-offset-7 {
     margin-left: 58.3333333333%;
   }
-  .grid .col-tablet-8 {
-    padding: 8px;
+
+  .col-md-8 {
+    box-sizing: border-box;
     flex-basis: 66.6666666667%;
+    max-width: 66.6666666667%;
+    padding: 1rem;
   }
-  .grid .offset-tablet-8 {
+
+  .col-md-offset-8 {
     margin-left: 66.6666666667%;
   }
-  .grid .col-tablet-9 {
-    padding: 8px;
+
+  .col-md-9 {
+    box-sizing: border-box;
     flex-basis: 75%;
+    max-width: 75%;
+    padding: 1rem;
   }
-  .grid .offset-tablet-9 {
+
+  .col-md-offset-9 {
     margin-left: 75%;
   }
-  .grid .col-tablet-10 {
-    padding: 8px;
+
+  .col-md-10 {
+    box-sizing: border-box;
     flex-basis: 83.3333333333%;
+    max-width: 83.3333333333%;
+    padding: 1rem;
   }
-  .grid .offset-tablet-10 {
+
+  .col-md-offset-10 {
     margin-left: 83.3333333333%;
   }
-  .grid .col-tablet-11 {
-    padding: 8px;
+
+  .col-md-11 {
+    box-sizing: border-box;
     flex-basis: 91.6666666667%;
+    max-width: 91.6666666667%;
+    padding: 1rem;
   }
-  .grid .offset-tablet-11 {
+
+  .col-md-offset-11 {
     margin-left: 91.6666666667%;
   }
-  .grid .col-tablet-12 {
-    padding: 8px;
+
+  .col-md-12 {
+    box-sizing: border-box;
     flex-basis: 100%;
+    max-width: 100%;
+    padding: 1rem;
   }
-  .grid .offset-tablet-12 {
+
+  .col-md-offset-12 {
     margin-left: 100%;
   }
+
+  .row.start-md {
+    justify-content: flex-start;
+  }
+
+  .row.center-md {
+    justify-content: center;
+  }
+
+  .row.end-md {
+    justify-content: flex-end;
+  }
+
+  .row.top-md {
+    align-items: flex-start;
+  }
+
+  .row.middle-md {
+    align-items: center;
+  }
+
+  .row.bottom-md {
+    align-items: flex-end;
+  }
+
+  .row.around-md {
+    justify-content: space-around;
+  }
+
+  .row.between-md {
+    justify-content: space-between;
+  }
+
+  .first-md {
+    order: -1;
+  }
+
+  .last-md {
+    order: 1;
+  }
 }
-@media screen and (min-width: 1200px) {
-  .grid .offset-desktop-0 {
-    margin-left: 0;
+@media only screen and (min-width: 91rem) {
+  .col-lg {
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    padding: 1rem;
   }
-  .grid .col-desktop-1 {
-    padding: 8px;
+
+  .col-lg-1 {
+    box-sizing: border-box;
     flex-basis: 8.3333333333%;
+    max-width: 8.3333333333%;
+    padding: 1rem;
   }
-  .grid .offset-desktop-1 {
+
+  .col-lg-offset-1 {
     margin-left: 8.3333333333%;
   }
-  .grid .col-desktop-2 {
-    padding: 8px;
+
+  .col-lg-2 {
+    box-sizing: border-box;
     flex-basis: 16.6666666667%;
+    max-width: 16.6666666667%;
+    padding: 1rem;
   }
-  .grid .offset-desktop-2 {
+
+  .col-lg-offset-2 {
     margin-left: 16.6666666667%;
   }
-  .grid .col-desktop-3 {
-    padding: 8px;
+
+  .col-lg-3 {
+    box-sizing: border-box;
     flex-basis: 25%;
+    max-width: 25%;
+    padding: 1rem;
   }
-  .grid .offset-desktop-3 {
+
+  .col-lg-offset-3 {
     margin-left: 25%;
   }
-  .grid .col-desktop-4 {
-    padding: 8px;
+
+  .col-lg-4 {
+    box-sizing: border-box;
     flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+    padding: 1rem;
   }
-  .grid .offset-desktop-4 {
+
+  .col-lg-offset-4 {
     margin-left: 33.3333333333%;
   }
-  .grid .col-desktop-5 {
-    padding: 8px;
+
+  .col-lg-5 {
+    box-sizing: border-box;
     flex-basis: 41.6666666667%;
+    max-width: 41.6666666667%;
+    padding: 1rem;
   }
-  .grid .offset-desktop-5 {
+
+  .col-lg-offset-5 {
     margin-left: 41.6666666667%;
   }
-  .grid .col-desktop-6 {
-    padding: 8px;
+
+  .col-lg-6 {
+    box-sizing: border-box;
     flex-basis: 50%;
+    max-width: 50%;
+    padding: 1rem;
   }
-  .grid .offset-desktop-6 {
+
+  .col-lg-offset-6 {
     margin-left: 50%;
   }
-  .grid .col-desktop-7 {
-    padding: 8px;
+
+  .col-lg-7 {
+    box-sizing: border-box;
     flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%;
+    padding: 1rem;
   }
-  .grid .offset-desktop-7 {
+
+  .col-lg-offset-7 {
     margin-left: 58.3333333333%;
   }
-  .grid .col-desktop-8 {
-    padding: 8px;
+
+  .col-lg-8 {
+    box-sizing: border-box;
     flex-basis: 66.6666666667%;
+    max-width: 66.6666666667%;
+    padding: 1rem;
   }
-  .grid .offset-desktop-8 {
+
+  .col-lg-offset-8 {
     margin-left: 66.6666666667%;
   }
-  .grid .col-desktop-9 {
-    padding: 8px;
+
+  .col-lg-9 {
+    box-sizing: border-box;
     flex-basis: 75%;
+    max-width: 75%;
+    padding: 1rem;
   }
-  .grid .offset-desktop-9 {
+
+  .col-lg-offset-9 {
     margin-left: 75%;
   }
-  .grid .col-desktop-10 {
-    padding: 8px;
+
+  .col-lg-10 {
+    box-sizing: border-box;
     flex-basis: 83.3333333333%;
+    max-width: 83.3333333333%;
+    padding: 1rem;
   }
-  .grid .offset-desktop-10 {
+
+  .col-lg-offset-10 {
     margin-left: 83.3333333333%;
   }
-  .grid .col-desktop-11 {
-    padding: 8px;
+
+  .col-lg-11 {
+    box-sizing: border-box;
     flex-basis: 91.6666666667%;
+    max-width: 91.6666666667%;
+    padding: 1rem;
   }
-  .grid .offset-desktop-11 {
+
+  .col-lg-offset-11 {
     margin-left: 91.6666666667%;
   }
-  .grid .col-desktop-12 {
-    padding: 8px;
+
+  .col-lg-12 {
+    box-sizing: border-box;
     flex-basis: 100%;
+    max-width: 100%;
+    padding: 1rem;
   }
-  .grid .offset-desktop-12 {
+
+  .col-lg-offset-12 {
     margin-left: 100%;
   }
+
+  .row.start-lg {
+    justify-content: flex-start;
+  }
+
+  .row.center-lg {
+    justify-content: center;
+  }
+
+  .row.end-lg {
+    justify-content: flex-end;
+  }
+
+  .row.top-lg {
+    align-items: flex-start;
+  }
+
+  .row.middle-lg {
+    align-items: center;
+  }
+
+  .row.bottom-lg {
+    align-items: flex-end;
+  }
+
+  .row.around-lg {
+    justify-content: space-around;
+  }
+
+  .row.between-lg {
+    justify-content: space-between;
+  }
+
+  .first-lg {
+    order: -1;
+  }
+
+  .last-lg {
+    order: 1;
+  }
 }
-.grid.reversed {
-  flex-direction: row-reverse;
+@media only screen and (min-width: 121rem) {
+  .col-xl {
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .col-xl-1 {
+    box-sizing: border-box;
+    flex-basis: 8.3333333333%;
+    max-width: 8.3333333333%;
+    padding: 1rem;
+  }
+
+  .col-xl-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+
+  .col-xl-2 {
+    box-sizing: border-box;
+    flex-basis: 16.6666666667%;
+    max-width: 16.6666666667%;
+    padding: 1rem;
+  }
+
+  .col-xl-offset-2 {
+    margin-left: 16.6666666667%;
+  }
+
+  .col-xl-3 {
+    box-sizing: border-box;
+    flex-basis: 25%;
+    max-width: 25%;
+    padding: 1rem;
+  }
+
+  .col-xl-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-xl-4 {
+    box-sizing: border-box;
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+    padding: 1rem;
+  }
+
+  .col-xl-offset-4 {
+    margin-left: 33.3333333333%;
+  }
+
+  .col-xl-5 {
+    box-sizing: border-box;
+    flex-basis: 41.6666666667%;
+    max-width: 41.6666666667%;
+    padding: 1rem;
+  }
+
+  .col-xl-offset-5 {
+    margin-left: 41.6666666667%;
+  }
+
+  .col-xl-6 {
+    box-sizing: border-box;
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 1rem;
+  }
+
+  .col-xl-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-xl-7 {
+    box-sizing: border-box;
+    flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%;
+    padding: 1rem;
+  }
+
+  .col-xl-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+
+  .col-xl-8 {
+    box-sizing: border-box;
+    flex-basis: 66.6666666667%;
+    max-width: 66.6666666667%;
+    padding: 1rem;
+  }
+
+  .col-xl-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+
+  .col-xl-9 {
+    box-sizing: border-box;
+    flex-basis: 75%;
+    max-width: 75%;
+    padding: 1rem;
+  }
+
+  .col-xl-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-xl-10 {
+    box-sizing: border-box;
+    flex-basis: 83.3333333333%;
+    max-width: 83.3333333333%;
+    padding: 1rem;
+  }
+
+  .col-xl-offset-10 {
+    margin-left: 83.3333333333%;
+  }
+
+  .col-xl-11 {
+    box-sizing: border-box;
+    flex-basis: 91.6666666667%;
+    max-width: 91.6666666667%;
+    padding: 1rem;
+  }
+
+  .col-xl-offset-11 {
+    margin-left: 91.6666666667%;
+  }
+
+  .col-xl-12 {
+    box-sizing: border-box;
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .col-xl-offset-12 {
+    margin-left: 100%;
+  }
+
+  .row.start-xl {
+    justify-content: flex-start;
+  }
+
+  .row.center-xl {
+    justify-content: center;
+  }
+
+  .row.end-xl {
+    justify-content: flex-end;
+  }
+
+  .row.top-xl {
+    align-items: flex-start;
+  }
+
+  .row.middle-xl {
+    align-items: center;
+  }
+
+  .row.bottom-xl {
+    align-items: flex-end;
+  }
+
+  .row.around-xl {
+    justify-content: space-around;
+  }
+
+  .row.between-xl {
+    justify-content: space-between;
+  }
+
+  .first-xl {
+    order: -1;
+  }
+
+  .last-xl {
+    order: 1;
+  }
+}
+.col-gutter-lr {
+  padding: 0 1rem;
+}
+
+.col-no-gutter {
+  padding: 0;
 }
 
 * {
@@ -1373,11 +2976,11 @@ body, p, ol, ul, li {
   line-height: 24px;
 }
 
-p, .body, h5, h6, ul, ol {
+p, .body, h5, h6, ul, ol, hgroup {
   margin: 0 0 8px;
 }
 
-h1, h2, h3, h4, hgroup {
+h1, h2, h3, h4 {
   margin: 16px 0 8px;
 }
 
@@ -1430,7 +3033,7 @@ caption, .caption {
   margin: 0;
 }
 
-.button {
+.button, .button:visited {
   background: #0336B9;
   color: #ffffff;
   border: none;
@@ -1442,18 +3045,22 @@ caption, .caption {
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
 }
-.button:hover {
+.button:hover, .button:visited:hover {
   background: #021D64;
+  color: #fff;
 }
-.button--secondary {
+.button--secondary, .button:visited--secondary {
   border: 1px solid #0336B9;
   color: #0336B9;
   background: none;
 }
-.button--secondary:hover {
+.button--secondary:hover, .button:visited--secondary:hover {
   background: none;
   border-color: #021D64;
   color: #021D64;
+}
+.button.disabled, .button:visited.disabled {
+  background: #555555;
 }
 
 .dark .button--secondary {
@@ -1465,19 +3072,46 @@ caption, .caption {
   border-color: #dddddd;
 }
 
+.carousel {
+  width: 100%;
+}
+
+.carousel-cell {
+  width: 100%;
+  text-align: center;
+}
+.carousel-cell img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.flickity-button {
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+}
+
+.flickity-enabled:hover .flickity-button {
+  opacity: 1;
+}
+
+.fancybox-slide {
+  padding: 44px 16px 16px;
+}
+
 body.internal {
-  padding: 16px;
   max-width: 680px;
 }
 
-header {
+header, footer {
   position: relative;
   background: #1d1d1d;
-  min-height: 90%;
 }
 
 header, section {
-  padding: 32px;
+  padding: 8px;
 }
 
 #portrait {
@@ -1495,13 +3129,6 @@ header, section {
 
 .img-fluid {
   max-width: 100%;
-}
-
-.visuals {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .visuals a {
@@ -1527,26 +3154,16 @@ section.dark {
   background-color: #EDF4FF;
 }
 
-#more-work a {
-  position: relative;
-  color: #fff;
-  display: block;
+#more-work-grid a {
+  text-decoration: none;
+  color: #1d1d1d;
 }
-#more-work a img {
-  display: block;
-}
-#more-work a hgroup {
-  margin: 0;
-  position: absolute;
+footer {
   text-align: center;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  padding: 32px 16px;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 41rem) {
   header #portrait {
     background-image: url(images/portrait--large.jpeg);
     background-size: cover;
@@ -1574,6 +3191,41 @@ section.dark {
     width: 33%;
     background: #1d1d1d;
     background: linear-gradient(80deg, rgba(29, 29, 29, 0) 0%, #1d1d1d 66%, #1d1d1d 95%);
+  }
+}
+@media (hover: hover) {
+  #more-work-grid a {
+    position: relative;
+    color: #fff;
+    display: block;
+  }
+  #more-work-grid a .caption {
+    color: #fff;
+  }
+  #more-work-grid a img {
+    display: block;
+  }
+  #more-work-grid a hgroup {
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.66);
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+  }
+  #more-work-grid a:hover hgroup {
+    opacity: 1;
   }
 }
 

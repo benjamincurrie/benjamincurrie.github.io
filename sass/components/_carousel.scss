@@ -1,0 +1,19 @@
+.carousel {
+    width:100%;
+}
+.carousel-cell {
+    width: 100%;
+    text-align:center;
+    img {
+        max-width:100%;
+        max-height:100%;
+        margin: 0 auto;
+    }
+}
+.flickity-button {
+    opacity: 0;
+    @include transition(opacity, .2s);
+}
+.flickity-enabled:hover .flickity-button {
+    opacity: 1;
+}

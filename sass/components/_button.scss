@@ -1,14 +1,15 @@
-.button {
+.button, .button:visited {
     background: $action;
     color: $light-content;
     border: none;
-    padding: $spacing-base $spacing-double;
+    padding: $spacing-md $spacing-lg;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     @include border-radius(100px);
     &:hover {
         background: $action-hover;
+        color:#fff;
     }
     &--secondary {
         border: 1px solid $action;
@@ -19,6 +20,9 @@
             border-color: $action-hover;
             color: $action-hover;
         }
+    }
+    &.disabled {
+        background: $content-alt;
     }
 }
 
