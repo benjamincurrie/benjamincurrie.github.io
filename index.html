@@ -12,6 +12,7 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Benjamin Currie - Design and Development</title>
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="style.css">
 
 	<link rel="shortcut icon" href="favicon.png" type="image/png" />
@@ -29,193 +30,384 @@
 <body>
 	<!-- Header -->
 	<header class="dark">
-		<div class="grid">
-			<div class="offset-mobile-6 col-mobile-6">
-				<!-- Content -->
-				<div id="portrait"></div>
-				<h5>Benjamin Currie</h5>
-				<a href="mailto:web@benjamincurrie.com" title="eMail">
-					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" width="24px" height="24px"><title>eMail</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-				</a>
-				<a href="mailto:web@benjamincurrie.com" title="Github">
-					<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" width="24px" height="24px"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-				</a>
-				
+		<div class="row">
+			<div class="col-xs-12 col-sm-offset-6 col-sm-6">
+				<div id="portrait">&nbsp;</div>
 				<hgroup>
-					<h4>I design, develop and create beautiful usable websites and applications for desktop and mobile.</h4>
-					<p>Over 10 years of experience working in the web within both Design and Development roles.</p>
-					<p>Covering a wide range of roles and industries my experience gives me a solid understanding of object oriented programming, design principals, color theory, branding, user testing, A/B testing and data analysis.</p>
-					<a data-fancybox="" data-type="iframe" href="about.html" class="button button--secondary">Learn more</a>
+					<h5>Benjamin Currie</h5>
+					<!-- <a href="mailto:web@benjamincurrie.com" title="eMail">
+						<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" width="24px" height="24px"><title>eMail</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+					</a>
+					<a href="mailto:web@benjamincurrie.com" title="Github">
+						<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" width="24px" height="24px"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+					</a> -->
 				</hgroup>
+				
+				<div class="padding-xl--ends">
+					<!-- <h2>Good design is visibility: hidden</h2> -->
+					<h2>UX designer at Booking.com, full stack developer, digital tinkerer.</h2>
+					<p>For the last 15 years I have been busy designing and developing websites and applications around the world. I am currently working as an App Designer at Booking.com, the worlds largest travel website, helping millions of people experience the world through travel.</p>
+					<p>I am a multi-disciplanary with a degree in Computer Science and I have worked as a PHP developer, Javascript developer and designer for a huge variety of projects across many industries.</p>
+					<div class="margin-lg--top">
+						<a data-fancybox="" data-type="iframe" href="about.html" class="button button--secondary">Learn more about me</a>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 	</header>
 	
 	<!-- Portfolio Section -->
+
+	<!-- Booking.com Messaging -->
+	<section id="booking-messaging">
+		<div class="row reverse">
+			<div class="col-xs-12 col-sm-6 device" style="text-align:center;">
+				<img src="images/projects/booking/messaging/phone_original.png" />
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<hgroup>
+					<p class="caption">Booking.com</p>
+					<h3>Messaging Platform</h3>
+				</hgroup>
+				<p>
+					Clear communication between Booking.com's accommodation partners and their guests is paramount for a successful stay. Prior to their trip a guest might want to communicate with someone in order to make a request or get clarity on a topic. The current way to do this was not ideal, either through email which was slow or via phone which meant the guest had no record of the conversation.
+				</p>
+				<p>
+					The Booking.com Messaging Platform was born out of a need for a quick communication tool between the guest and accommodation partner, it was required to be accessible across all devices so we designed, built and launched across both web and native apps at the same time.
+				</p>
+
+				<p><strong>Role</strong> Qualitative research, Quantitative research, Prototyping, App &amp; Web design, Design strategy</p>
+
+				<nav class="visuals">
+					<a data-fancybox="messaging" href="images/projects/booking/messaging/messages.jpg"
+						data-caption="The inbox became a core part of the Booking.com product, it allowed the users to see all messages they had received from accommodations. We spent a lot of time understanding users mental models around threading, should we thread messages based on the property, what if users stayed there twice, what if users had two different questions, would that live in one thread or two?"
+					>
+						<img class="img-fluid" src="images/projects/booking/messaging/messages_thumb.jpg">
+					</a>
+					<a data-fancybox="messaging" href="images/projects/booking/messaging/reservation.jpg"
+						data-caption="Feature discovery was important, we introduced entry points in multiple places across the product. Through research we understood where users would commonly look for how to get in touch with their accommodation."
+					>
+						<img class="img-fluid" src="images/projects/booking/messaging/reservation_thumb.jpg" />
+					</a>
+					<a data-fancybox="messaging" href="images/projects/booking/messaging/requests.jpg"
+						data-caption="We found through research that many guests had recurring patterns of similar requests, so we created structured requests which allowed the guest to quicly request something such as an extra bed, properties could also respond to these quickly and include a price. Structured requests also had the benefit of being translated into our 41 languages facilitating clear communication across parties who don't speak the same language."
+					>
+						<img class="img-fluid" src="images/projects/booking/messaging/requests_thumb.jpg" />
+					</a>
+					<a data-fancybox="messaging" href="images/projects/booking/messaging/email.jpg"
+						data-caption="Since our users are not always logged in it was also important that the messaging system lived within their email inbox. We designed email components to mirror the native experience and also built a system that allowed users to reply to emails and have the response sent as a message. This introduced new complexities since email supports more complex elements such as formatting and images, so we were required to design solutions for these cases."
+					>
+						<img class="img-fluid" src="images/projects/booking/messaging/email_thumb.jpg">
+					</a>
+				</nav>
+			</div>
+		</div>
+	</section>
+
+	<!-- Booking.com Customer Support -->
+	<section id="booking-cs" class="dark">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 device">
+				<img src="images/projects/booking/cs/phone.png" />
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<hgroup>
+					<p class="caption">Booking.com</p>
+					<h3>Customer Support Portal</h3>
+				</hgroup>
+				<p>
+					<!-- I get by with a little help from my friends. -->
+					While we never think something will go wrong when we make a purchase or book something, unfortunately sometimes it does and that's when Booking.com's award winning customer service comes in. Our customer service is one of the top reasons our customers continually choose Booking.com to book their stays. But it's not always clear to a guest how and where they should get help. Do I call customer service? Should I message the property? Can I find the answer online? The Customer Support Portal was created to answer those questions and point the guest in the right direction when they need help. Through research we understood the most common help topics and built a streamlined flow that allowed users to find answers quickly.
+				</p>
+				<p>
+					The CS Portal was designed around natural language processing pioneered by the Messaging Platform, it allowed users to ask a question and an algorithm would detect what topics they were likely asking about. Based on the topic we then suggested whether it would be better for them to contact our Customer Service or the Accommodation, we offered various channels of communication (phone, email, messaging) and suggested which might be the most appropriate.
+				</p>
+
+				<p><strong>Role</strong> Qualitative research, Quantitative research, Prototyping, App &amp; Web design, Design strategy</p>
+
+				<nav class="visuals">
+					<a data-fancybox="cs" href="images/projects/booking/cs/home.jpg"
+						data-caption="The CS Portal was designed around natural language processing pioneered by the Messaging Platform, it allowed users to ask a question and an algorithm would detect what topics they were likely asking about. We also provided a navigation that allowed them to select topics manually."
+					>
+						<img class="img-fluid" src="images/projects/booking/cs/home_thumb.jpg">
+					</a>
+					<a data-fancybox="cs" href="images/projects/booking/cs/desktop.jpg"
+						data-caption="The CS Portal was designed to work across all platforms, we designed core UI components that would be driven by a singular back-end architecture ensuring the answers provided on one platform were consistent with the other. This enabled us to scale solutions quickly as new topics were introduced."
+					>
+						<img class="img-fluid" src="images/projects/booking/cs/desktop_thumb.jpg" />
+					</a>
+					<a data-fancybox="cs" href="images/projects/booking/cs/overcharged.jpg"
+						data-caption="An example of a topic screen, in the case of an overcharge we provide self-service tooling as a primary option for a quick solution. We also explain that since payments are handled by the accommodation the guest should try contacting them first."
+					>
+						<img class="img-fluid" src="images/projects/booking/cs/overcharged_thumb.jpg" />
+					</a>
+					<a data-fancybox="cs" href="images/projects/booking/cs/sketch.jpg"
+						data-caption="An initial wireframe of the CS Portal, we went through multiple iterations at this stage before exploring high definition prototypes."
+					>
+						<img class="img-fluid" src="images/projects/booking/cs/sketch_thumb.jpg">
+					</a>
+				</nav>
+			</div>
+		</div>
+	</section>
+
+	<!-- Booking.com Hostels -->
+	<section id="booking-hostels">
+		<div class="row reverse">
+			<div class="col-xs-12 col-sm-6 device" style="text-align:center;">
+				<img src="images/projects/booking/hostels/phone.png" />
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<hgroup>
+					<p class="caption">Booking.com</p>
+					<h3>Hostels</h3>
+				</hgroup>
+				<p>
+					Booking.com was originally created in 1996 (then called bookings.nl) to connect travellers with Hotels and for over 20 years it focussed primarily on the Hotel market with huge success. Through years of experimentation the product had been highly optimised for Booking.com's primary audience (a party of two looking for a double room in a hotel). To continue to grow Booking needed to look for new opportunities and created a team dedicated to improving the experience for Hostels and the Backpacker segment.
+				</p>
+				<p>
+					Through initial research it became clear that a "backpacker" traveller had very different needs than our other customers. Backpackers were willing to forgo or share certain amenities in order to save money, so we made it easier to find shared low cost dorm rooms. Privacy and safety was a primary concern so we highlighted how many people rooms and bathrooms were shared with. We worked with our hostel partners to collect new information such as bathroom details, lockers, privacy curtains.
+				</p>
+
+				<p><strong>Role</strong> Qualitative research, Quantitative research, Prototyping, Design strategy</p>
+
+				<nav class="visuals">
+					<a data-fancybox="hostels" href="images/projects/booking/hostels/results.jpg"
+						data-caption="We made it easier to compare the cost of getting two dorm beds in a shared room vs a private room. Previously guests needed to continue to the property page before knowing what the cost for shared dorms would be. In some cases properties wouldn't even show up in the listings if no private rooms were available."
+					>
+						<img class="img-fluid" src="images/projects/booking/hostels/results_thumb.jpg" />
+					</a>
+					<a data-fancybox="hostels" href="images/projects/booking/hostels/property.jpg"
+						data-caption="Through research we understood what amenities were most important to hostel travellers. We highlighted these at the very top of each property listing, lockers for example were important for the security of our guests."
+					>
+						<img class="img-fluid" src="images/projects/booking/hostels/property_thumb.jpg">
+					</a>
+					<a data-fancybox="hostels" href="images/projects/booking/hostels/rooms.jpg"
+						data-caption="We completely redesigned the room cards, imagery became a primary focus given the younger audience but we also highlighted whether a room was private or shared, and if any gender restrictions applied. We also made it easier to select more than one bed, which was more common for hostel travellers."
+					>
+						<img class="img-fluid" src="images/projects/booking/hostels/rooms_thumb.jpg" />
+					</a>
+					<a data-fancybox="hostels" href="images/projects/booking/hostels/room.jpg"
+						data-caption="The room details became optimised for information we knew hostel travellers wanted to see. Through card sorting we understood the top amenities and highlighted things like lockers and socket near the bed. We also collected detailed bathroom information so guests could understand whether bathrooms were in the room or down the hall."
+					>
+						<img class="img-fluid" src="images/projects/booking/hostels/room_thumb.jpg">
+					</a>
+				</nav>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- UN Women -->
+	<!-- <section id="un-women" class="dark">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6" style="text-align:center;">
+				<img class="img-fluid" src="https://via.placeholder.com/375x640" />
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<hgroup>
+					<p class="caption">Portable</p>
+					<h3>UN Women Website & CMS</h3>
+				</hgroup>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at quam in dui ultricies rutrum id hendrerit lacus. Cras rhoncus mauris sit amet elit malesuada tempor. Ut egestas posuere nisl eu blandit. Cras velit mi, dapibus id consectetur sed, vestibulum quis risus. Maecenas pharetra scelerisque neque non egestas. Quisque ut mollis lectus, vitae consequat erat. Fusce rutrum, nulla ac sagittis porttitor, massa justo vulputate justo, in viverra lectus diam in est. Mauris placerat augue lorem, eget blandit nisl porta eget. Maecenas ut ligula nec lacus tempus luctus vitae sit amet odio. Nam sit amet tellus quis augue dignissim venenatis quis ut erat.
+				</p>
+				
+				<p>
+					<strong>Role:</strong> Web Design Implementation &amp; Development<br/>
+					<strong>Technologies:</strong> Photoshop, PHP, HTML5, CSS3, Javascript
+				</p>
+				
+				<nav class="visuals">
+					<a data-fancybox="images" href="https://via.placeholder.com/800" data-width="800" data-height="800"><img class="img-fluid" src="https://via.placeholder.com/150"></a>
+					<a data-fancybox="images" href="https://via.placeholder.com/800" data-width="800" data-height="800"><img class="img-fluid" src="https://via.placeholder.com/150"></a>
+					<a data-fancybox="images" href="https://via.placeholder.com/800" data-width="800" data-height="800"><img class="img-fluid" src="https://via.placeholder.com/150"></a>
+					<a data-fancybox="images" href="https://via.placeholder.com/800" data-width="800" data-height="800"><img class="img-fluid" src="https://via.placeholder.com/150"></a>
+				</nav>
+			</div>
+		</div>
+	</section> -->
 	
-	<section id="portfolio" class="clearfix">
-		<div id="foliogrid">
-			<div class="">
-				<!-- Cake Me Pretty -->
-				<a href="projects/cakemepretty.html" class="large-3 medium-4 small-6 fancybox ajax web-design ecommerce">
-					<img src="images/projects/cakemepretty/grid.jpg" />
-					<hgroup>
-						<h3>Cake Me Pretty</h3>
-						<h4>eCommerce</h4>
-					</hgroup>
-				</a>
+	<!-- More work -->
+	<section id="more-work">
+		<div class="row">
+			<div class="col-xs-12">
+				<h3>More work samples</h3>
+				<p>I've selected some of my favorite projects to show you below, <a href="mailto:web@benjamincurrie.com">contact me</a> if you would like to see some more samples or even just have a chat.</p>
+			</div>
+		</div>
+		<div id="more-work-grid" class="row">
+			<!-- Cake Me Pretty -->
+			<div class="col-xs-6 col-sm-4 col-lg-3" data-type="web-design ecommerce">
 
-				<!-- Ben by JW -->
-				<a href="projects/benbyjw.html" class="large-3 medium-4 small-6 fancybox ajax web-design">
-					<img src="images/projects/benbyjw/grid.jpg" />
+				<a data-fancybox="" data-type="iframe" href="projects/cakemepretty.html">
+					<img class="img-fluid" src="images/projects/cakemepretty/grid.jpg" />
 					<hgroup>
-						<h3>Ben by JW</h3>
-						<h4>Promotional Website</h4>
-					</hgroup>
-				</a>
-
-				<!-- Idolem -->
-				<a href="projects/idolem.html" class="large-3 medium-4 small-6 fancybox ajax web-design">
-					<img src="images/projects/idolem/grid.jpg" />
-					<hgroup>
-						<h3>Idolem</h3>
-						<h4>Promotional Website</h4>
-					</hgroup>
-				</a>
-				
-				<!-- BulkSMS -->
-				
-				<a href="projects/bulksms.html" class="large-3 medium-4 small-6 fancybox ajax branding">
-					<img src="images/projects/bulksms/grid.jpg" />
-					<hgroup>
-						<h3>BulkSMS</h3>
-						<h4>Promotional Website</h4>
-					</hgroup>
-				</a>
-				
-				<!-- ZAQ APP -->
-				
-				<a href="projects/zaq.html" class="large-3 medium-4 small-6 fancybox ajax app-development web-development branding web-design ecommerce">
-					<img src="images/projects/zaq/grid.jpg" />
-					<hgroup>
-						<h3>ZAQ</h3>
-						<h4>iPhone Application</h4>
-					</hgroup>
-				</a>
-				
-				<!-- Transitioning Well -->
-				
-				<a href="projects/transitioningwell.html" class="large-3 medium-4 small-6 fancybox ajax web-design">
-					<img src="images/projects/transitioningwell/grid.jpg" />
-					<hgroup>
-						<h3>Transitioning Well</h3>
-						<h4>Promotional Website</h4>
-					</hgroup>
-				</a>
-				
-				<!-- Reel Adventures -->
-				
-				<a href="projects/reeladventures.html" class="large-3 medium-4 small-6 fancybox ajax branding web-design">
-					<img src="images/projects/reeladventures/grid.jpg" />
-					<hgroup>
-						<h3>Reel Adventures</h3>
-						<h4>Website &amp; Social Media</h4>
-					</hgroup>
-				</a>
-				
-				<!-- UN Women -->
-				
-				<a href="/projects/unwomen.html" class="large-3 medium-4 small-6 fancybox ajax web-design web-development">
-					<img src="images/projects/unwomen/grid.jpg" />
-					<hgroup>
-						<h3>UN Women</h3>
-						<h4>Web Integration</h4>
-					</hgroup>
-				</a>
-
-
-				<!-- Patios Decor -->
-				<a href="projects/patios-decor.html" class="large-3 medium-4 small-6 fancybox ajax branding">
-					<img src="images/projects/patiosdecor/card.jpg" />
-					<hgroup>
-						<h3>Patios Décor</h3>
-						<h4>Branding</h4>
-					</hgroup>
-				</a>
-				
-				<!-- Netrocket -->
-				
-				<a href="projects/netrocket.html" class="large-3 medium-4 small-6 fancybox ajax branding">
-					<img src="images/projects/netrocket/logo_2.jpg" />
-					<hgroup>
-						<h3>Netrocket</h3>
-						<h4>Branding</h4>
-					</hgroup>
-				</a>
-
-				
-				<!-- Pollit Accounting -->
-				
-				<a href="/projects/pollitt-accounting.html" class="large-3 medium-4 small-6 fancybox ajax branding">
-					<img src="images/projects/pollittaccounting/logo_2.jpg" />
-					<hgroup>
-						<h3>Pollitt Accounting</h3>
-						<h4>Branding</h4>
-					</hgroup>
-				</a>
-				
-				
-				<!-- InfoLigne -->
-				
-				<a href="/projects/infoligne.html" class="large-3 medium-4 small-6 fancybox ajax branding">
-					<img src="images/projects/infoligne/letterhead.jpg" />
-					<hgroup>
-						<h3>InfoLigne</h3>
-						<h4>Branding</h4>
+						<p class="caption">Patisserie</p>
+						<h5>Cake Me Pretty</h5>
+						<p>Ecommerce &bull; Promotional website</p>
 					</hgroup>
 				</a>
 			</div>
+			
+
+			<!-- Ben by JW -->
+			<div class="col-xs-6 col-sm-4 col-lg-3" data-type="web-design">
+				<a data-fancybox="" data-type="iframe" href="projects/benbyjw.html">
+					<img class="img-fluid" src="images/projects/benbyjw/grid.jpg" />
+					<hgroup>
+						<p class="caption">Clothing designer</p>
+						<h5>Ben by JW</h5>
+						<p>Promotional website &bull; Lookbook</p>
+					</hgroup>
+				</a>
+			</div>
+
+			<!-- Idolem -->
+			<div class="col-xs-6 col-sm-4 col-lg-4" data-type="web-design">
+				<a data-fancybox="" data-type="iframe" href="projects/idolem.html">
+					<img class="img-fluid" src="images/projects/idolem/grid.jpg" />
+					<hgroup>
+						<p class="caption">Yoga studio</p>
+						<h5>Idolem</h5>
+						<p>Promotional website &bull; Booking platform</p>
+					</hgroup>
+				</a>
+			</div>
+			
+			<!-- BulkSMS -->
+			<div class="col-xs-6 col-sm-4 col-lg-4" data-type="branding">
+				<a data-fancybox="" data-type="iframe" href="projects/bulksms.html">
+					<img class="img-fluid" src="images/projects/bulksms/grid.jpg" />
+					<hgroup>
+						<p class="caption">Communication service</p>
+						<h5>BulkSMS</h5>
+						<p>Promotional website</p>
+					</hgroup>
+				</a>
+			</div>
+			
+			<!-- ZAQ APP -->
+			<div class="col-xs-6 col-sm-4 col-lg-4" data-type="app-development web-development branding web-design ecommerce">
+				<a data-fancybox="" data-type="iframe" href="projects/zaq.html">
+					<img class="img-fluid" src="images/projects/zaq/grid.jpg" />
+					<hgroup>
+						<p class="caption">Payment service</p>
+						<h5>ZAQ</h5>
+						<p>iPhone Application &bull; Branding &bull; Promotional website</p>
+					</hgroup>
+				</a>
+			</div>
+			
+			<!-- Transitioning Well -->
+			<div class="col-xs-6 col-sm-4 col-lg-4" data-type="web-design">
+				<a data-fancybox="" data-type="iframe" href="projects/transitioningwell.html">
+					<img class="img-fluid" src="images/projects/transitioningwell/grid.jpg" />
+					<hgroup>
+						<p class="caption">Life coaching</p>
+						<h5>Transitioning Well</h5>
+						<p>Promotional website</p>
+					</hgroup>
+				</a>
+			</div>
+			
+			<!-- Reel Adventures -->
+			<div class="col-xs-6 col-sm-4 col-lg-4" data-type="branding web-design">
+				<a data-fancybox="" data-type="iframe" href="projects/reeladventures.html">
+					<img class="img-fluid" src="images/projects/reeladventures/grid.jpg" />
+					<hgroup>
+						<p class="caption">Entertainment</p>
+						<h5>Reel Adventures</h5>
+						<p>Website &bull; Social media</p>
+					</hgroup>
+				</a>
+			</div>
+			
+			<!-- UN Women -->
+			<div class="col-xs-6 col-sm-4 col-lg-4" data-type="web-design web-development">
+				<a data-fancybox="" data-type="iframe" href="projects/unwomen.html">
+					<img class="img-fluid" src="images/projects/unwomen/grid.jpg" />
+					<hgroup>
+						<p class="caption">Social justice</p>
+						<h5>UN Women Australia</h5>
+						<p>Website &bull; CMS</p>
+					</hgroup>
+				</a>
+			</div>
+			
+			<!-- Patios Decor -->
+			<div class="col-xs-6 col-sm-4 col-lg-4" data-type="branding">
+				<a data-fancybox="" data-type="iframe" href="projects/patios-decor.html">
+					<img class="img-fluid" src="images/projects/patiosdecor/card.jpg" />
+					<hgroup>
+						<p class="caption">Construction</p>
+						<h5>Patios Décor</h5>
+						<p>Branding &bull; Print media</p>
+					</hgroup>
+				</a>
+			</div>
+			
+			<!-- Netrocket -->
+			<div class="col-xs-6 col-sm-4 col-lg-4" data-type="branding">
+				<a data-fancybox="" data-type="iframe" href="projects/netrocket.html">
+					<img class="img-fluid" src="images/projects/netrocket/logo_2.jpg" />
+					<hgroup>
+						<p class="caption">Web hosting services</p>
+						<h5>Netrocket</h5>
+						<p>Branding</p>
+					</hgroup>
+				</a>
+			</div>
+			
+			<!-- Pollit Accounting -->
+			<div class="col-xs-6 col-sm-4 col-lg-4" data-type="branding">
+				<a data-fancybox="" data-type="iframe" href="projects/pollitt-accounting.html">
+					<img class="img-fluid" src="images/projects/pollittaccounting/logo_2.jpg" />
+					<hgroup>
+						<p class="caption">Financial services</p>
+						<h5>Pollitt Accounting</h5>
+						<p>Branding</p>
+					</hgroup>
+				</a>
+			</div>
+			
+			<!-- InfoLigne -->
+			<div class="col-xs-6 col-sm-4 col-lg-4" data-type="branding">
+				<a data-fancybox="" data-type="iframe" href="projects/infoligne.html">
+					<img class="img-fluid" src="images/projects/infoligne/letterhead.jpg" />
+					<hgroup>
+						<p class="caption">Financial services</p>
+						<h5>InfoLigne</h5>
+						<p>Branding &bull; Print media</p>
+					</hgroup>
+				</a>
+			</div>
+			
 		</div>
 		
 	</section>
 	
 	<!-- 
+		Todo:
 		Sniip (iPhone App, Website, Admin Panel, Branding)
 		InfoPrimes (Website, Branding)
 		Imagination (Website)
 		Todone (School Project)
 	 -->
-	
-	<!-- End Portfolio Section -->
-	
-	<!-- Connect Section -->
-	
-	<section id="connect">
-		<header>
-			<h2>Connect</h2>
-			<span class="seperator">&nbsp;</span>
-			<p>You'll find me all over the web, feel free to connect with me the way you prefer.</p>
-		</header>
-		
-		<nav class="social center">
-			<a href="mailto:web@benjamincurrie.com" data-tooltip class="has-tip tip-bottom contact fancybox" title="Message Me"><i class="fa fa-envelope"></i></a>
-			<a href="https://www.linkedin.com/in/benjamincurrie/" data-tooltip class="has-tip tip-bottom linkedin" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-			<a href="https://github.com/benjamincurrie" data-tooltip class="has-tip tip-bottom github" title="Github"><i class="fa fa-github"></i></a>
-		</nav>
-	</section>
-	
-	<!-- End Connect Section -->
 
 	<!-- Footer -->
-
-	<footer>
-		&copy; 2013 Benjamin Currie
+	<footer class="dark">
+		<p>&copy; Benjamin Currie</p>
+		<nav>
+			<a href="mailto:web@benjamincurrie.com">Send me an email</a>
+			&bull;
+			<a href="https://www.linkedin.com/in/benjamincurrie/" target="_blank">Linked In</a>
+		</nav>
 	</footer>
 
-	<!-- End Footer -->
-	
+	<!-- Scripts -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 </body>

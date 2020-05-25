@@ -10,22 +10,35 @@ $serif: Georgia,Times,Times New Roman,serif;
 
 body {
     font-family: $sans-serif; 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
+    font-weight: 400; 
+    font-size: 18px;
+    line-height: 24px;
+}
+p, .body, h5, h6, ul, ol, hgroup {
+    margin: 0 0 $spacing-md;
+}
+ul, ol {
+    padding-left: $spacing-xl;
 }
 h1, h2, h3, h4 {
-    font-family: $serif; 
-    margin: 0 0 $spacing-double;
+    margin: $spacing-lg 0 $spacing-md;
+}
+hgroup {
+    h1, h2, h3, h4, h5, h6, p {
+        margin: 0;
+    }
+}
+h1, h2, h3, h4 {
+    font-family: $serif;
     font-weight: 700;
 }
 h1, .display-one {
     font-size: 72px;
-    line-height: 86px;
+    line-height: 88px;
 }
 h2, .display-two {
     font-size: 48px;
-    line-height: 52px;
+    line-height: 56px;
 }
 h3, .display-three {
     font-size: 32px;
@@ -38,25 +51,17 @@ h4, .heading {
 h5, .featured {
     font-size: 20px;
     line-height: 30px;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
-    margin: 0 0 $spacing-base;
 }
 h6, .bold {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 700;
-    margin: 0 0 $spacing-base;
-}
-p, .body {
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0 0 $spacing-base;
 }
 caption, .caption {
     font-size: 12px;
     line-height: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
+    font-weight: 600;
     margin: 0;
 }
