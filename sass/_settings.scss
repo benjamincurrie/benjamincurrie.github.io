@@ -1,3 +1,16 @@
+// Spacing
+$spacing-base: 8px;
+
+$spacing-xs: $spacing-base/4;
+$spacing-sm: $spacing-base/2;
+$spacing-md: $spacing-base;
+$spacing-lg: $spacing-base*2;
+$spacing-xl: $spacing-base*4;
+
+// TODO: Use a map
+$spacing-size-names: ("xs", "sm", "md", "lg", "xl");
+$spacing-sizes: ($spacing-xs, $spacing-sm, $spacing-md, $spacing-lg, $spacing-xl);
+
 // Grid
 $grid-columns: 12 !default; // Set number of columns in the grid
 
@@ -6,7 +19,7 @@ $sm-max: 64rem !default; // Set sm breakpoint's max width
 $md-max: 90rem !default; // Set md breakpoint's max width
 $lg-max: 120rem !default; // Set lg breakpoint's max width
 
-$gutter: 1rem !default; // Set gutter size
+$gutter: $spacing-base * 2 !default; // Set gutter size
 
 $content-well-max-width: "none" !default; // Set the max-width of the content well
 

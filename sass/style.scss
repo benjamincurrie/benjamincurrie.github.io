@@ -6,8 +6,8 @@
 
 // Foundations
 @import "color";
-@import "spacing";
 @import "grid";
+@import "spacing";
 @import "typography";
 
 // Compnents
@@ -27,7 +27,7 @@ header, section {
 	padding: $spacing-md;
 }
 #portrait {
-	background-image: url(images/portrait.jpeg);
+	background-image: url(images/portrait.jpg);
 	background-size: cover;
 	background-position: center;
 	width: 128px;
@@ -53,8 +53,8 @@ header, section {
 	margin-bottom: $spacing-md;
 	display: inline-block;
 	img {
-		max-width:120px;
-		max-height:240px;
+		max-width:300px;
+		max-height:120px;
 		display: block;
 	}
 }
@@ -68,6 +68,9 @@ section {
 #booking-messaging {
 	background-color: #EDF4FF;
 }
+#booking-cs {
+	background-color: #041b41;
+}
 
 #more-work-grid {
 	a {
@@ -77,6 +80,13 @@ section {
 		}
 		hgroup {
 		}
+	}
+}
+
+.device {
+	text-align: center;
+	img {
+		max-width:100%;
 	}
 }
 
