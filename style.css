@@ -3162,6 +3162,10 @@ section.dark {
   background-color: #041b41;
 }
 
+#booking-hostels {
+  background-color: #ffffff;
+}
+
 #more-work-grid a {
   text-decoration: none;
   color: #1d1d1d;
@@ -3224,6 +3228,10 @@ footer {
     position: absolute;
     left: 50%;
     margin-left: -250px;
+  }
+
+  #booking-hostels .device img {
+    width: 1000px;
   }
 }
 @media (hover: hover) {
