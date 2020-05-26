@@ -3105,6 +3105,28 @@ caption, .caption {
   padding: 44px 16px 16px;
 }
 
+.fancybox-caption__body {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.fancybox-show-nav .fancybox-navigation .fancybox-button {
+  background: none;
+}
+.fancybox-show-nav .fancybox-navigation .fancybox-button > div {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 48px;
+  -webkit-border-radius: 48px;
+  -moz-border-radius: 48px;
+  color: #1d1d1d;
+}
+.fancybox-show-nav .fancybox-navigation .fancybox-button:disabled {
+  opacity: 0;
+}
+
 body.internal {
   max-width: 680px;
 }
@@ -3230,11 +3252,25 @@ footer {
     margin-left: -250px;
   }
 
+  #booking-messaging .device img {
+    width: auto;
+  }
+
   #booking-hostels .device img {
-    width: 1000px;
+    width: 1200px;
+    max-width: 150%;
+  }
+}
+@media (hover: none) {
+  .mouse-only {
+    display: none;
   }
 }
 @media (hover: hover) {
+  .touch-only {
+    display: none;
+  }
+
   #more-work-grid a {
     position: relative;
     color: #fff;

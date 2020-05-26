@@ -44,8 +44,12 @@
 			margin-left: -250px;
 		}
 	}
+	#booking-messaging .device img {
+		width: auto;
+	}
 	#booking-hostels .device img {
-		width: 1000px;
+		width: 1200px;
+		max-width: 150%;
 	}
 }
 @media #{$breakpoint-sm-only} { }
@@ -58,7 +62,12 @@
 
 @media #{$breakpoint-xl-up} { }
 
+@media (hover: none) {
+    .mouse-only { display: none; }
+}
+
 @media (hover: hover) {
+	.touch-only { display: none; }
 	#more-work-grid {
 		a {
 			position: relative;
