@@ -1,4 +1,4 @@
-.button, .button:visited {
+.button {
     background: $action;
     color: $light-content;
     border: none;
@@ -6,7 +6,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    @include border-radius(100px);
+    @include border-radius(5px);
     &:hover {
         background: $action-hover;
         color:#fff;

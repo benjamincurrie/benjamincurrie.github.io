@@ -23,11 +23,15 @@ header, footer {
 	position: relative;
 	background: $content;
 }
+header .content {
+	position: relative;
+	z-index: 10;
+}
 header, section {
 	padding: $spacing-md;
 }
 #portrait {
-	background-image: url(images/portrait.jpg);
+	background-image: url(../images/avatar.jpg);
 	background-size: cover;
 	background-position: center;
 	width: 128px;

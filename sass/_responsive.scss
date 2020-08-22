@@ -7,30 +7,22 @@
 		margin-bottom: $spacing-xl;
 	}
 	header #portrait {
-		background-image: url(images/portrait_large.jpg);
-		background-size: cover;
-		background-position: 50% 100%;
+		background-image: url(../images/portrait_orig.jpg);
+		background-size: contain;
+		background-position: 100% 100%;
+		background-color: $content;
+		background-repeat: no-repeat;
 		position: absolute;
+		z-index: 0;
 		top: 0;
-		left: 0;
-		right:50%;
+		left: 0%;
+		right:0;
 		bottom:0;
 		@include border-radius(0);
 		border: none;
 		width: auto;
 		height: auto;
 		margin: 0;
-		&::after {
-			content: " ";
-			background: $content;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			width:33%;
-			background: rgb(29,29,29);
-			background: linear-gradient(80deg, rgba(29,29,29,0) 0%, rgba(29,29,29,1) 66%, rgba(29,29,29,1) 95%);
-		}
 	}
 	section {
 		overflow:hidden;
