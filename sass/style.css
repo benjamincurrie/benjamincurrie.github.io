@@ -1,0 +1,3466 @@
+/*! normalize.css v2.1.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Prevent system color scheme's background color being used in Firefox, IE,
+ *    and Opera.
+ * 2. Prevent system color scheme's text color being used in Firefox, IE, and
+ *    Opera.
+ * 3. Set default font family to sans-serif.
+ * 4. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  background: #fff;
+  /* 1 */
+  color: #000;
+  /* 2 */
+  font-family: sans-serif;
+  /* 3 */
+  -ms-text-size-adjust: 100%;
+  /* 4 */
+  -webkit-text-size-adjust: 100%;
+  /* 4 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  color: #1d1d1d;
+}
+
+body caption, body .caption, body .alt {
+  color: #555555;
+}
+
+a, a:visited {
+  color: #0336B9;
+}
+
+a svg path, a svg path, a:visited svg path, a:visited svg path {
+  fill: #0336B9;
+}
+
+a:hover, a:visited:hover {
+  color: #021D64;
+}
+
+a:hover svg path, a:hover svg path, a:visited:hover svg path, a:visited:hover svg path {
+  fill: #021D64;
+}
+
+.dark {
+  color: #ffffff;
+}
+
+.dark img path, .dark img path {
+  fill: #0336B9;
+}
+
+.dark caption, .dark .caption, .dark .alt {
+  color: #dddddd;
+}
+
+.dark a, .dark a:visited {
+  color: #ffffff;
+}
+
+.dark a svg path, .dark a:visited svg path {
+  fill: #ffffff;
+}
+
+.dark a:hover, .dark a:visited:hover {
+  color: #dddddd;
+}
+
+.dark a:hover svg path, .dark a:visited:hover svg path {
+  fill: #dddddd;
+}
+
+.row {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.row.natural-height {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.row.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.col {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  max-width: 100%;
+  padding: 16px;
+}
+
+.col.reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.first {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.last {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.align-start {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.align-end {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.align-center {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.align-baseline {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.align-stretch {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.col-xs {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  max-width: 100%;
+  padding: 16px;
+}
+
+.col-xs-1 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 8.33333%;
+      flex-basis: 8.33333%;
+  max-width: 8.33333%;
+  padding: 16px;
+}
+
+.col-xs-offset-1 {
+  margin-left: 8.33333%;
+}
+
+.col-xs-2 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 16.66667%;
+      flex-basis: 16.66667%;
+  max-width: 16.66667%;
+  padding: 16px;
+}
+
+.col-xs-offset-2 {
+  margin-left: 16.66667%;
+}
+
+.col-xs-3 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  max-width: 25%;
+  padding: 16px;
+}
+
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+.col-xs-4 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 33.33333%;
+      flex-basis: 33.33333%;
+  max-width: 33.33333%;
+  padding: 16px;
+}
+
+.col-xs-offset-4 {
+  margin-left: 33.33333%;
+}
+
+.col-xs-5 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 41.66667%;
+      flex-basis: 41.66667%;
+  max-width: 41.66667%;
+  padding: 16px;
+}
+
+.col-xs-offset-5 {
+  margin-left: 41.66667%;
+}
+
+.col-xs-6 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  max-width: 50%;
+  padding: 16px;
+}
+
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+.col-xs-7 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 58.33333%;
+      flex-basis: 58.33333%;
+  max-width: 58.33333%;
+  padding: 16px;
+}
+
+.col-xs-offset-7 {
+  margin-left: 58.33333%;
+}
+
+.col-xs-8 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 66.66667%;
+      flex-basis: 66.66667%;
+  max-width: 66.66667%;
+  padding: 16px;
+}
+
+.col-xs-offset-8 {
+  margin-left: 66.66667%;
+}
+
+.col-xs-9 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  max-width: 75%;
+  padding: 16px;
+}
+
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+.col-xs-10 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 83.33333%;
+      flex-basis: 83.33333%;
+  max-width: 83.33333%;
+  padding: 16px;
+}
+
+.col-xs-offset-10 {
+  margin-left: 83.33333%;
+}
+
+.col-xs-11 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 91.66667%;
+      flex-basis: 91.66667%;
+  max-width: 91.66667%;
+  padding: 16px;
+}
+
+.col-xs-offset-11 {
+  margin-left: 91.66667%;
+}
+
+.col-xs-12 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  max-width: 100%;
+  padding: 16px;
+}
+
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+.row.start-xs {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.row.center-xs {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row.end-xs {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.row.top-xs {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.row.middle-xs {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row.bottom-xs {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.row.around-xs {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.row.between-xs {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.first-xs {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.last-xs {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media only screen and (min-width: 41rem) {
+  .col-sm {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    max-width: 100%;
+    padding: 16px;
+  }
+  .col-sm-1 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 8.33333%;
+        flex-basis: 8.33333%;
+    max-width: 8.33333%;
+    padding: 16px;
+  }
+  .col-sm-offset-1 {
+    margin-left: 8.33333%;
+  }
+  .col-sm-2 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 16.66667%;
+        flex-basis: 16.66667%;
+    max-width: 16.66667%;
+    padding: 16px;
+  }
+  .col-sm-offset-2 {
+    margin-left: 16.66667%;
+  }
+  .col-sm-3 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    max-width: 25%;
+    padding: 16px;
+  }
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  .col-sm-4 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 33.33333%;
+        flex-basis: 33.33333%;
+    max-width: 33.33333%;
+    padding: 16px;
+  }
+  .col-sm-offset-4 {
+    margin-left: 33.33333%;
+  }
+  .col-sm-5 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 41.66667%;
+        flex-basis: 41.66667%;
+    max-width: 41.66667%;
+    padding: 16px;
+  }
+  .col-sm-offset-5 {
+    margin-left: 41.66667%;
+  }
+  .col-sm-6 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 50%;
+    padding: 16px;
+  }
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  .col-sm-7 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 58.33333%;
+        flex-basis: 58.33333%;
+    max-width: 58.33333%;
+    padding: 16px;
+  }
+  .col-sm-offset-7 {
+    margin-left: 58.33333%;
+  }
+  .col-sm-8 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 66.66667%;
+        flex-basis: 66.66667%;
+    max-width: 66.66667%;
+    padding: 16px;
+  }
+  .col-sm-offset-8 {
+    margin-left: 66.66667%;
+  }
+  .col-sm-9 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+    max-width: 75%;
+    padding: 16px;
+  }
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  .col-sm-10 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 83.33333%;
+        flex-basis: 83.33333%;
+    max-width: 83.33333%;
+    padding: 16px;
+  }
+  .col-sm-offset-10 {
+    margin-left: 83.33333%;
+  }
+  .col-sm-11 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 91.66667%;
+        flex-basis: 91.66667%;
+    max-width: 91.66667%;
+    padding: 16px;
+  }
+  .col-sm-offset-11 {
+    margin-left: 91.66667%;
+  }
+  .col-sm-12 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+    padding: 16px;
+  }
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+  .row.start-sm {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .row.center-sm {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .row.end-sm {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .row.top-sm {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .row.middle-sm {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .row.bottom-sm {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .row.around-sm {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .row.between-sm {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .first-sm {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .last-sm {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .col-md {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    max-width: 100%;
+    padding: 16px;
+  }
+  .col-md-1 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 8.33333%;
+        flex-basis: 8.33333%;
+    max-width: 8.33333%;
+    padding: 16px;
+  }
+  .col-md-offset-1 {
+    margin-left: 8.33333%;
+  }
+  .col-md-2 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 16.66667%;
+        flex-basis: 16.66667%;
+    max-width: 16.66667%;
+    padding: 16px;
+  }
+  .col-md-offset-2 {
+    margin-left: 16.66667%;
+  }
+  .col-md-3 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    max-width: 25%;
+    padding: 16px;
+  }
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  .col-md-4 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 33.33333%;
+        flex-basis: 33.33333%;
+    max-width: 33.33333%;
+    padding: 16px;
+  }
+  .col-md-offset-4 {
+    margin-left: 33.33333%;
+  }
+  .col-md-5 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 41.66667%;
+        flex-basis: 41.66667%;
+    max-width: 41.66667%;
+    padding: 16px;
+  }
+  .col-md-offset-5 {
+    margin-left: 41.66667%;
+  }
+  .col-md-6 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 50%;
+    padding: 16px;
+  }
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+  .col-md-7 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 58.33333%;
+        flex-basis: 58.33333%;
+    max-width: 58.33333%;
+    padding: 16px;
+  }
+  .col-md-offset-7 {
+    margin-left: 58.33333%;
+  }
+  .col-md-8 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 66.66667%;
+        flex-basis: 66.66667%;
+    max-width: 66.66667%;
+    padding: 16px;
+  }
+  .col-md-offset-8 {
+    margin-left: 66.66667%;
+  }
+  .col-md-9 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+    max-width: 75%;
+    padding: 16px;
+  }
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+  .col-md-10 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 83.33333%;
+        flex-basis: 83.33333%;
+    max-width: 83.33333%;
+    padding: 16px;
+  }
+  .col-md-offset-10 {
+    margin-left: 83.33333%;
+  }
+  .col-md-11 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 91.66667%;
+        flex-basis: 91.66667%;
+    max-width: 91.66667%;
+    padding: 16px;
+  }
+  .col-md-offset-11 {
+    margin-left: 91.66667%;
+  }
+  .col-md-12 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+    padding: 16px;
+  }
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+  .row.start-md {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .row.center-md {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .row.end-md {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .row.top-md {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .row.middle-md {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .row.bottom-md {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .row.around-md {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .row.between-md {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .first-md {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .last-md {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media only screen and (min-width: 91rem) {
+  .col-lg {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    max-width: 100%;
+    padding: 16px;
+  }
+  .col-lg-1 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 8.33333%;
+        flex-basis: 8.33333%;
+    max-width: 8.33333%;
+    padding: 16px;
+  }
+  .col-lg-offset-1 {
+    margin-left: 8.33333%;
+  }
+  .col-lg-2 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 16.66667%;
+        flex-basis: 16.66667%;
+    max-width: 16.66667%;
+    padding: 16px;
+  }
+  .col-lg-offset-2 {
+    margin-left: 16.66667%;
+  }
+  .col-lg-3 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    max-width: 25%;
+    padding: 16px;
+  }
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  .col-lg-4 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 33.33333%;
+        flex-basis: 33.33333%;
+    max-width: 33.33333%;
+    padding: 16px;
+  }
+  .col-lg-offset-4 {
+    margin-left: 33.33333%;
+  }
+  .col-lg-5 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 41.66667%;
+        flex-basis: 41.66667%;
+    max-width: 41.66667%;
+    padding: 16px;
+  }
+  .col-lg-offset-5 {
+    margin-left: 41.66667%;
+  }
+  .col-lg-6 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 50%;
+    padding: 16px;
+  }
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  .col-lg-7 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 58.33333%;
+        flex-basis: 58.33333%;
+    max-width: 58.33333%;
+    padding: 16px;
+  }
+  .col-lg-offset-7 {
+    margin-left: 58.33333%;
+  }
+  .col-lg-8 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 66.66667%;
+        flex-basis: 66.66667%;
+    max-width: 66.66667%;
+    padding: 16px;
+  }
+  .col-lg-offset-8 {
+    margin-left: 66.66667%;
+  }
+  .col-lg-9 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+    max-width: 75%;
+    padding: 16px;
+  }
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  .col-lg-10 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 83.33333%;
+        flex-basis: 83.33333%;
+    max-width: 83.33333%;
+    padding: 16px;
+  }
+  .col-lg-offset-10 {
+    margin-left: 83.33333%;
+  }
+  .col-lg-11 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 91.66667%;
+        flex-basis: 91.66667%;
+    max-width: 91.66667%;
+    padding: 16px;
+  }
+  .col-lg-offset-11 {
+    margin-left: 91.66667%;
+  }
+  .col-lg-12 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+    padding: 16px;
+  }
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+  .row.start-lg {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .row.center-lg {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .row.end-lg {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .row.top-lg {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .row.middle-lg {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .row.bottom-lg {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .row.around-lg {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .row.between-lg {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .first-lg {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .last-lg {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media only screen and (min-width: 121rem) {
+  .col-xl {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    max-width: 100%;
+    padding: 16px;
+  }
+  .col-xl-1 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 8.33333%;
+        flex-basis: 8.33333%;
+    max-width: 8.33333%;
+    padding: 16px;
+  }
+  .col-xl-offset-1 {
+    margin-left: 8.33333%;
+  }
+  .col-xl-2 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 16.66667%;
+        flex-basis: 16.66667%;
+    max-width: 16.66667%;
+    padding: 16px;
+  }
+  .col-xl-offset-2 {
+    margin-left: 16.66667%;
+  }
+  .col-xl-3 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    max-width: 25%;
+    padding: 16px;
+  }
+  .col-xl-offset-3 {
+    margin-left: 25%;
+  }
+  .col-xl-4 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 33.33333%;
+        flex-basis: 33.33333%;
+    max-width: 33.33333%;
+    padding: 16px;
+  }
+  .col-xl-offset-4 {
+    margin-left: 33.33333%;
+  }
+  .col-xl-5 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 41.66667%;
+        flex-basis: 41.66667%;
+    max-width: 41.66667%;
+    padding: 16px;
+  }
+  .col-xl-offset-5 {
+    margin-left: 41.66667%;
+  }
+  .col-xl-6 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 50%;
+    padding: 16px;
+  }
+  .col-xl-offset-6 {
+    margin-left: 50%;
+  }
+  .col-xl-7 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 58.33333%;
+        flex-basis: 58.33333%;
+    max-width: 58.33333%;
+    padding: 16px;
+  }
+  .col-xl-offset-7 {
+    margin-left: 58.33333%;
+  }
+  .col-xl-8 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 66.66667%;
+        flex-basis: 66.66667%;
+    max-width: 66.66667%;
+    padding: 16px;
+  }
+  .col-xl-offset-8 {
+    margin-left: 66.66667%;
+  }
+  .col-xl-9 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+    max-width: 75%;
+    padding: 16px;
+  }
+  .col-xl-offset-9 {
+    margin-left: 75%;
+  }
+  .col-xl-10 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 83.33333%;
+        flex-basis: 83.33333%;
+    max-width: 83.33333%;
+    padding: 16px;
+  }
+  .col-xl-offset-10 {
+    margin-left: 83.33333%;
+  }
+  .col-xl-11 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 91.66667%;
+        flex-basis: 91.66667%;
+    max-width: 91.66667%;
+    padding: 16px;
+  }
+  .col-xl-offset-11 {
+    margin-left: 91.66667%;
+  }
+  .col-xl-12 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+    padding: 16px;
+  }
+  .col-xl-offset-12 {
+    margin-left: 100%;
+  }
+  .row.start-xl {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .row.center-xl {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .row.end-xl {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .row.top-xl {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .row.middle-xl {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .row.bottom-xl {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .row.around-xl {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .row.between-xl {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .first-xl {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .last-xl {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.col-gutter-lr {
+  padding: 0 16px;
+}
+
+.col-no-gutter {
+  padding: 0;
+}
+
+/* e.g. %padding { padding: $spacing-base }  */
+.margin {
+  margin: 8px;
+}
+
+/* e.g. %padding-none { padding: 0 }  */
+.margin-none {
+  margin: 0;
+}
+
+/* e.g. %padding--ends */
+.margin--ends {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.margin-none--ends {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* e.g. %padding--sides */
+.margin--sides {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.margin-none--sides {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* 
+		* Loop through each side and create the class for it
+		*
+		* e.g. padding--left: $amount
+		*/
+/* e.g. %padding--top */
+.margin--top {
+  margin-top: 8px;
+}
+
+.margin-none--top {
+  margin-top: 0;
+}
+
+/* 
+		* Loop through each size
+		*
+		* e.g. double, triple, half, quarter
+		*/
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-xs {
+  margin: 2px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-xs--ends {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-xs--sides {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-xs--top {
+  margin-top: 2px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-sm {
+  margin: 4px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-sm--ends {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-sm--sides {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-sm--top {
+  margin-top: 4px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-md {
+  margin: 8px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-md--ends {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-md--sides {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-md--top {
+  margin-top: 8px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-lg {
+  margin: 16px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-lg--ends {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-lg--sides {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-lg--top {
+  margin-top: 16px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-xl {
+  margin: 32px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-xl--ends {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-xl--sides {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-xl--top {
+  margin-top: 32px;
+}
+
+/* e.g. %padding { padding: $spacing-base }  */
+.padding {
+  padding: 8px;
+}
+
+/* e.g. %padding-none { padding: 0 }  */
+.padding-none {
+  padding: 0;
+}
+
+/* e.g. %padding--ends */
+.padding--ends {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.padding-none--ends {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* e.g. %padding--sides */
+.padding--sides {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.padding-none--sides {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 
+		* Loop through each side and create the class for it
+		*
+		* e.g. padding--left: $amount
+		*/
+/* e.g. %padding--top */
+.padding--top {
+  padding-top: 8px;
+}
+
+.padding-none--top {
+  padding-top: 0;
+}
+
+/* 
+		* Loop through each size
+		*
+		* e.g. double, triple, half, quarter
+		*/
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-xs {
+  padding: 2px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-xs--ends {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-xs--sides {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-xs--top {
+  padding-top: 2px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-sm {
+  padding: 4px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-sm--ends {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-sm--sides {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-sm--top {
+  padding-top: 4px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-md {
+  padding: 8px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-md--ends {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-md--sides {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-md--top {
+  padding-top: 8px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-lg {
+  padding: 16px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-lg--ends {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-lg--sides {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-lg--top {
+  padding-top: 16px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-xl {
+  padding: 32px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-xl--ends {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-xl--sides {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-xl--top {
+  padding-top: 32px;
+}
+
+/* e.g. %padding { padding: $spacing-base }  */
+.margin {
+  margin: 8px;
+}
+
+/* e.g. %padding-none { padding: 0 }  */
+.margin-none {
+  margin: 0;
+}
+
+/* e.g. %padding--ends */
+.margin--ends {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.margin-none--ends {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* e.g. %padding--sides */
+.margin--sides {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.margin-none--sides {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* 
+		* Loop through each side and create the class for it
+		*
+		* e.g. padding--left: $amount
+		*/
+/* e.g. %padding--top */
+.margin--left {
+  margin-left: 8px;
+}
+
+.margin-none--left {
+  margin-left: 0;
+}
+
+/* 
+		* Loop through each size
+		*
+		* e.g. double, triple, half, quarter
+		*/
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-xs {
+  margin: 2px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-xs--ends {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-xs--sides {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-xs--left {
+  margin-left: 2px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-sm {
+  margin: 4px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-sm--ends {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-sm--sides {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-sm--left {
+  margin-left: 4px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-md {
+  margin: 8px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-md--ends {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-md--sides {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-md--left {
+  margin-left: 8px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-lg {
+  margin: 16px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-lg--ends {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-lg--sides {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-lg--left {
+  margin-left: 16px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-xl {
+  margin: 32px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-xl--ends {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-xl--sides {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-xl--left {
+  margin-left: 32px;
+}
+
+/* e.g. %padding { padding: $spacing-base }  */
+.padding {
+  padding: 8px;
+}
+
+/* e.g. %padding-none { padding: 0 }  */
+.padding-none {
+  padding: 0;
+}
+
+/* e.g. %padding--ends */
+.padding--ends {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.padding-none--ends {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* e.g. %padding--sides */
+.padding--sides {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.padding-none--sides {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 
+		* Loop through each side and create the class for it
+		*
+		* e.g. padding--left: $amount
+		*/
+/* e.g. %padding--top */
+.padding--left {
+  padding-left: 8px;
+}
+
+.padding-none--left {
+  padding-left: 0;
+}
+
+/* 
+		* Loop through each size
+		*
+		* e.g. double, triple, half, quarter
+		*/
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-xs {
+  padding: 2px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-xs--ends {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-xs--sides {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-xs--left {
+  padding-left: 2px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-sm {
+  padding: 4px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-sm--ends {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-sm--sides {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-sm--left {
+  padding-left: 4px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-md {
+  padding: 8px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-md--ends {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-md--sides {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-md--left {
+  padding-left: 8px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-lg {
+  padding: 16px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-lg--ends {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-lg--sides {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-lg--left {
+  padding-left: 16px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-xl {
+  padding: 32px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-xl--ends {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-xl--sides {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-xl--left {
+  padding-left: 32px;
+}
+
+/* e.g. %padding { padding: $spacing-base }  */
+.margin {
+  margin: 8px;
+}
+
+/* e.g. %padding-none { padding: 0 }  */
+.margin-none {
+  margin: 0;
+}
+
+/* e.g. %padding--ends */
+.margin--ends {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.margin-none--ends {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* e.g. %padding--sides */
+.margin--sides {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.margin-none--sides {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* 
+		* Loop through each side and create the class for it
+		*
+		* e.g. padding--left: $amount
+		*/
+/* e.g. %padding--top */
+.margin--bottom {
+  margin-bottom: 8px;
+}
+
+.margin-none--bottom {
+  margin-bottom: 0;
+}
+
+/* 
+		* Loop through each size
+		*
+		* e.g. double, triple, half, quarter
+		*/
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-xs {
+  margin: 2px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-xs--ends {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-xs--sides {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-xs--bottom {
+  margin-bottom: 2px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-sm {
+  margin: 4px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-sm--ends {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-sm--sides {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-sm--bottom {
+  margin-bottom: 4px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-md {
+  margin: 8px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-md--ends {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-md--sides {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-md--bottom {
+  margin-bottom: 8px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-lg {
+  margin: 16px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-lg--ends {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-lg--sides {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-lg--bottom {
+  margin-bottom: 16px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-xl {
+  margin: 32px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-xl--ends {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-xl--sides {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-xl--bottom {
+  margin-bottom: 32px;
+}
+
+/* e.g. %padding { padding: $spacing-base }  */
+.padding {
+  padding: 8px;
+}
+
+/* e.g. %padding-none { padding: 0 }  */
+.padding-none {
+  padding: 0;
+}
+
+/* e.g. %padding--ends */
+.padding--ends {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.padding-none--ends {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* e.g. %padding--sides */
+.padding--sides {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.padding-none--sides {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 
+		* Loop through each side and create the class for it
+		*
+		* e.g. padding--left: $amount
+		*/
+/* e.g. %padding--top */
+.padding--bottom {
+  padding-bottom: 8px;
+}
+
+.padding-none--bottom {
+  padding-bottom: 0;
+}
+
+/* 
+		* Loop through each size
+		*
+		* e.g. double, triple, half, quarter
+		*/
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-xs {
+  padding: 2px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-xs--ends {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-xs--sides {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-xs--bottom {
+  padding-bottom: 2px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-sm {
+  padding: 4px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-sm--ends {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-sm--sides {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-sm--bottom {
+  padding-bottom: 4px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-md {
+  padding: 8px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-md--ends {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-md--sides {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-md--bottom {
+  padding-bottom: 8px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-lg {
+  padding: 16px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-lg--ends {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-lg--sides {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-lg--bottom {
+  padding-bottom: 16px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-xl {
+  padding: 32px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-xl--ends {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-xl--sides {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-xl--bottom {
+  padding-bottom: 32px;
+}
+
+/* e.g. %padding { padding: $spacing-base }  */
+.margin {
+  margin: 8px;
+}
+
+/* e.g. %padding-none { padding: 0 }  */
+.margin-none {
+  margin: 0;
+}
+
+/* e.g. %padding--ends */
+.margin--ends {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.margin-none--ends {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* e.g. %padding--sides */
+.margin--sides {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.margin-none--sides {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* 
+		* Loop through each side and create the class for it
+		*
+		* e.g. padding--left: $amount
+		*/
+/* e.g. %padding--top */
+.margin--right {
+  margin-right: 8px;
+}
+
+.margin-none--right {
+  margin-right: 0;
+}
+
+/* 
+		* Loop through each size
+		*
+		* e.g. double, triple, half, quarter
+		*/
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-xs {
+  margin: 2px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-xs--ends {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-xs--sides {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-xs--right {
+  margin-right: 2px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-sm {
+  margin: 4px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-sm--ends {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-sm--sides {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-sm--right {
+  margin-right: 4px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-md {
+  margin: 8px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-md--ends {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-md--sides {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-md--right {
+  margin-right: 8px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-lg {
+  margin: 16px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-lg--ends {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-lg--sides {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-lg--right {
+  margin-right: 16px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.margin-xl {
+  margin: 32px;
+}
+
+/* e.g. %padding-large--ends */
+.margin-xl--ends {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* e.g. %padding-large--sides */
+.margin-xl--sides {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.margin-xl--right {
+  margin-right: 32px;
+}
+
+/* e.g. %padding { padding: $spacing-base }  */
+.padding {
+  padding: 8px;
+}
+
+/* e.g. %padding-none { padding: 0 }  */
+.padding-none {
+  padding: 0;
+}
+
+/* e.g. %padding--ends */
+.padding--ends {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.padding-none--ends {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* e.g. %padding--sides */
+.padding--sides {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.padding-none--sides {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 
+		* Loop through each side and create the class for it
+		*
+		* e.g. padding--left: $amount
+		*/
+/* e.g. %padding--top */
+.padding--right {
+  padding-right: 8px;
+}
+
+.padding-none--right {
+  padding-right: 0;
+}
+
+/* 
+		* Loop through each size
+		*
+		* e.g. double, triple, half, quarter
+		*/
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-xs {
+  padding: 2px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-xs--ends {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-xs--sides {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-xs--right {
+  padding-right: 2px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-sm {
+  padding: 4px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-sm--ends {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-sm--sides {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-sm--right {
+  padding-right: 4px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-md {
+  padding: 8px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-md--ends {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-md--sides {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-md--right {
+  padding-right: 8px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-lg {
+  padding: 16px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-lg--ends {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-lg--sides {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-lg--right {
+  padding-right: 16px;
+}
+
+/* get the index of the current item in the loop */
+/* get the spacing size for whichever size name we are on */
+/* Base padding for each size */
+.padding-xl {
+  padding: 32px;
+}
+
+/* e.g. %padding-large--ends */
+.padding-xl--ends {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* e.g. %padding-large--sides */
+.padding-xl--sides {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* 
+			* Loop through each side and create the class for it
+			*
+			* e.g. padding-left: $amount, padding-right: $amount
+			*/
+/* e.g. %padding-large--top */
+.padding-xl--right {
+  padding-right: 32px;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+p, .body, h5, h6, ul, ol, hgroup {
+  margin: 0 0 8px;
+}
+
+ul, ol {
+  padding-left: 32px;
+}
+
+h1, h2, h3, h4 {
+  margin: 16px 0 8px;
+}
+
+hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6, hgroup p {
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+h1, .display-one {
+  font-size: 72px;
+  line-height: 88px;
+}
+
+h2, .display-two {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+h3, .display-three {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+h4, .heading {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h5, .featured {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h6, .bold {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+caption, .caption {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.button {
+  background: #0336B9;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.button:hover {
+  background: #021D64;
+  color: #fff;
+}
+
+.button--secondary {
+  border: 1px solid #0336B9;
+  color: #0336B9;
+  background: none;
+}
+
+.button--secondary:hover {
+  background: none;
+  border-color: #021D64;
+  color: #021D64;
+}
+
+.button.disabled {
+  background: #555555;
+}
+
+.dark .button--secondary {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.dark .button--secondary:hover {
+  color: #dddddd;
+  border-color: #dddddd;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.carousel-cell {
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-cell img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.flickity-button {
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+}
+
+.flickity-enabled:hover .flickity-button {
+  opacity: 1;
+}
+
+.fancybox-slide {
+  padding: 44px 16px 16px;
+}
+
+.fancybox-caption__body {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.fancybox-show-nav .fancybox-navigation .fancybox-button {
+  background: none;
+}
+
+.fancybox-show-nav .fancybox-navigation .fancybox-button > div {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 48px;
+  -webkit-border-radius: 48px;
+  -moz-border-radius: 48px;
+  color: #1d1d1d;
+}
+
+.fancybox-show-nav .fancybox-navigation .fancybox-button:disabled {
+  opacity: 0;
+}
+
+body.internal {
+  max-width: 680px;
+}
+
+header, footer {
+  position: relative;
+  background: #1d1d1d;
+}
+
+header .content {
+  position: relative;
+  z-index: 10;
+}
+
+header, section {
+  padding: 8px;
+}
+
+#portrait {
+  background-image: url(../images/avatar.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 128px;
+  height: 128px;
+  border-radius: 128px;
+  -webkit-border-radius: 128px;
+  -moz-border-radius: 128px;
+  border: 2px solid #fff;
+  margin-bottom: 8px;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+
+.visuals a {
+  text-decoration: none;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.visuals a img {
+  max-width: 300px;
+  max-height: 195px;
+  display: block;
+}
+
+section {
+  background: #f5f5f5;
+}
+
+section.dark {
+  background: #333333;
+}
+
+#booking-messaging {
+  background-color: #EDF4FF;
+}
+
+#booking-cs {
+  background-color: #041b41;
+}
+
+#booking-hostels {
+  background-color: #ffffff;
+}
+
+#more-work-grid a {
+  text-decoration: none;
+  color: #1d1d1d;
+}
+
+.device {
+  text-align: center;
+}
+
+.device img {
+  max-width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 32px 16px;
+}
+
+@media only screen and (min-width: 41rem) {
+  header hgroup {
+    margin-bottom: 32px;
+  }
+  header #portrait {
+    background-image: url(../images/portrait_orig.jpg);
+    background-size: contain;
+    background-position: 100% 100%;
+    background-color: #1d1d1d;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border: none;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+  section {
+    overflow: hidden;
+  }
+  .device {
+    position: relative;
+  }
+  .device img {
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+  }
+  #booking-messaging .device img {
+    width: auto;
+  }
+  #booking-hostels .device img {
+    width: 1200px;
+    max-width: 150%;
+  }
+}
+
+@media (hover: none) {
+  .mouse-only {
+    display: none;
+  }
+}
+
+@media (hover: hover) {
+  .touch-only {
+    display: none;
+  }
+  #more-work-grid a {
+    position: relative;
+    color: #fff;
+    display: block;
+  }
+  #more-work-grid a .caption {
+    color: #fff;
+  }
+  #more-work-grid a img {
+    display: block;
+  }
+  #more-work-grid a hgroup {
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.66);
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+  }
+  #more-work-grid a:hover hgroup {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
